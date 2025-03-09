@@ -35,7 +35,7 @@ export default class ProjectsMenu extends Component {
 
   render() {
     const { activeProject } = this.state;
-    const projectItems = ["Zoco"];
+    const projectItems = ["Zoco","Lubri Box"];
 
     // const projectItems = ["Zoco", "nombre del proyecto", "nombre del proyecto"];
 
