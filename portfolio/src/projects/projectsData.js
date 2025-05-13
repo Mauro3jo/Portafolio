@@ -7,16 +7,17 @@ const projects = {
     image: projectOne,
     description: (
       <>
-        <p>
-          App Web: Un panel intuitivo que ofrece a clientes acceso a sus datos
-          de facturación y permite a asesores comerciales gestionar y potenciar
-          sus ventas.
-        </p>
-        <p>
-          Billetera virtual ZOCO: Creación de una billetera virtual con
-          funcionalidades básicas como la gestión de saldo, transferencias,
-          perfil de usuario y flujos básicos de operaciones.
-        </p>
+<p>
+  ZocoWeb es una solución empresarial de gran escala, desarrollada con una arquitectura moderna, escalable y orientada a buenas prácticas.
+  Utiliza <strong>.NET 6</strong> (ASP.NET Core, Entity Framework) en el backend y <strong>React.js</strong> en el frontend, ofreciendo una API REST robusta y segura con autenticación JWT y encriptación de contraseñas con BCrypt.
+  Emplea principios <strong>SOLID</strong>, <strong>inyección de dependencias (IoC)</strong> y <strong>AutoMapper</strong> para lograr un código limpio, mantenible y testable.
+  El acceso a datos se gestiona sobre <strong>SQL Server</strong> mediante el patrón Repository, LINQ avanzado y optimizaciones como <code>Include</code> y <code>AsNoTracking</code>.
+  La arquitectura incluye mecanismos de <strong>caché en memoria</strong> (MemoryCache), ejecución de <strong>jobs programados</strong> y generación dinámica de reportes en Excel mediante ClosedXML.
+  Además, se desarrollaron pruebas unitarias enfocadas en lógica de negocio y un pipeline de despliegue en <strong>Windows Cloud</strong> (DonWeb), con configuración avanzada de <strong>IIS</strong>.
+</p>
+
+
+
       </>
     ),
     sitioWeb: "https://zocoweb.com.ar/",
@@ -34,20 +35,7 @@ const projects = {
      ),
     sitioWeb: "https://demo-prueba.online/",
    },
-  // 3: {
-  //   title: "Zoco Servicio de pago",
-  //   image: projectOne,
-  //   description: (
-  //     <>
-  //       <p>
-  //         App Web: Un panel intuitivo que ofrece a clientes acceso a sus datos
-  //         de facturación y permite a asesores comerciales gestionar y potenciar
-  //         sus ventas.
-  //       </p>
-  //     </>
-  //   ),
-  //   sitioWeb: "https://zocoweb.com.ar/",
-  // },
+ 
 };
 
 export default projects;
