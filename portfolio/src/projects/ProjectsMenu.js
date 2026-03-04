@@ -4,57 +4,79 @@ import classNames from "classnames";
 import projects from "./projectsData";
 import "../styles/projectsMenu.css";
 
+const orderedProjectIds = Object.keys(projects)
+  .map((id) => Number(id))
+  .sort((a, b) => a - b);
+
 export default class ProjectsMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeProject: 1,
+      activeProject: orderedProjectIds[0] ?? null,
     };
   }
 
-  handleProjectClick = (project) => {
+  handleProjectClick = (projectId) => {
     this.setState({
-      activeProject: project,
+      activeProject: projectId,
     });
   };
 
-  renderContent = (projects) => {
-    return projects.map((project, index) => (
-      <div key={index} className={`project-sub-container-${index + 1}`}>
-        <h1 style={{ paddingBottom: "10px" }}>{project.title}</h1>
-        <img style={{ maxWidth: "100%", height: "auto" }} src={project.image} alt={project.title} />
+  renderContent = (project) => {
+    if (!project) {
+      return <p className="project-empty">No hay proyectos cargados.</p>;
+    }
+
+    return (
+      <div className="project-sub-content">
+        <h1 className="project-heading">{project.title}</h1>
+        <img
+          className="project-image"
+          src={project.image}
+          alt={project.title}
+          loading="lazy"
+        />
         <div className="scrollable-description">{project.description}</div>
         <div className="link-container">
-          <a style={{ backgroundColor: "ThreeDLightShadow" }} href={project.sitioWeb} target="_blank" rel="noopener noreferrer">
+          <a
+            className="project-link"
+            href={project.sitioWeb}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ir al sitio web
           </a>
         </div>
       </div>
-    ));
+    );
   };
 
   render() {
     const { activeProject } = this.state;
-    const projectItems = ["Zoco", "Lubri Box"];
+    const projectItems = orderedProjectIds.map((id) => ({
+      id,
+      title: projects[id].title,
+    }));
+    const selectedProject = activeProject ? projects[activeProject] : null;
 
     return (
       <div className="project-menu">
         <div className="project-items-container">
-          {projectItems.map((item, index) => (
-            <div
-              key={index}
+          {projectItems.map((item) => (
+            <button
+              type="button"
+              key={item.id}
               className={classNames("project-item", {
-                activeProject: activeProject === index + 1,
+                activeProject: activeProject === item.id,
               })}
-              onClick={() => this.handleProjectClick(index + 1)}
+              onClick={() => this.handleProjectClick(item.id)}
+              aria-pressed={activeProject === item.id}
             >
-              <h2 className="title">{item}</h2>
-            </div>
+              <h2 className="project-title">{item.title}</h2>
+            </button>
           ))}
         </div>
-        <div className="project-sub-container">
-          {this.renderContent([projects[activeProject]])}
-        </div>
+        <div className="project-sub-container">{this.renderContent(selectedProject)}</div>
       </div>
     );
   }

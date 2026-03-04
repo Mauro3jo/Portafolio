@@ -20,13 +20,14 @@
   transform: translateX(-15.62rem);
 }
 
-a {
+.nav-link {
   width: 3.125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  text-decoration: none;
 }
 
 .page-title {
