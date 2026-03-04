@@ -1,41 +1,44 @@
 import projectOne from "../assets/proyecto-1.png";
-import projectTwo from "../assets/proyecto-2.png";
+import projectThree from "../assets/proyecto-trinidad.jpg";
+import projectFour from "../assets/proyecto-directv.jpg";
 
 const projects = {
   1: {
-    title: "Zoco Servicio de pago",
+    title: "Zoco Servicios de Pago",
     image: projectOne,
     description: (
-      <>
-<p>
-  ZocoWeb es una solución empresarial de gran escala, desarrollada con una arquitectura moderna, escalable y orientada a buenas prácticas.
-  Utiliza <strong>.NET 6</strong> (ASP.NET Core, Entity Framework) en el backend y <strong>React.js</strong> en el frontend, ofreciendo una API REST robusta y segura con autenticación JWT y encriptación de contraseñas con BCrypt.
-  Emplea principios <strong>SOLID</strong>, <strong>inyección de dependencias (IoC)</strong> y <strong>AutoMapper</strong> para lograr un código limpio, mantenible y testable.
-  El acceso a datos se gestiona sobre <strong>SQL Server</strong> mediante el patrón Repository, LINQ avanzado y optimizaciones como <code>Include</code> y <code>AsNoTracking</code>.
-  La arquitectura incluye mecanismos de <strong>caché en memoria</strong> (MemoryCache), ejecución de <strong>jobs programados</strong> y generación dinámica de reportes en Excel mediante ClosedXML.
-  Además, se desarrollaron pruebas unitarias enfocadas en lógica de negocio y un pipeline de despliegue en <strong>Windows Cloud</strong> (DonWeb), con configuración avanzada de <strong>IIS</strong>.
-</p>
-
-
-
-      </>
+      <p>
+        Plataforma empresarial de gran escala desarrollada con <strong>ASP.NET Core 6</strong>, <strong>Entity Framework</strong> y <strong>React.js</strong>. Implemente APIs RESTful seguras con JWT,
+        arquitectura por capas, principios SOLID, AutoMapper, consultas LINQ avanzadas y optimizacion en SQL Server. Tambien trabaje en jobs programados, reportes Excel con ClosedXML y
+        despliegue en AWS/Windows Server con IIS.
+      </p>
     ),
     sitioWeb: "https://zocoweb.com.ar/",
   },
-   2: {
-     title: "Lubri Box",
-     image: projectTwo,
-     description: (
-       <>
-        <p>
-          Lubri Box es una página que permite a los usuarios ingresar datos y
-          generar presupuestos. Está hecha en React.js y permite descargar PDFs.
-        </p>
-       </>
-     ),
-    sitioWeb: "https://demo-prueba.online/",
-   },
- 
+  2: {
+    title: "Trinidad Salud",
+    image: projectThree,
+    description: (
+      <p>
+        Proyecto freelance full stack para una plataforma de gestion de salud. Desarrolle APIs RESTful en <strong>Laravel 8</strong> para sistema administrativo y app movil, con modulos de
+        afiliados, consultas, recetas, facturacion y reintegros. En frontend trabaje con <strong>React.js</strong> y tambien desarrolle una <strong>app de celular</strong> para afiliados,
+        conectada a las APIs del sistema. Ademas implemente autenticacion con Sanctum, roles/permisos con Spatie y despliegue en AWS.
+      </p>
+    ),
+    sitioWeb: "https://trinidadsalud.com.ar/",
+  },
+  3: {
+    title: "DIRECTV LATAM (ASAP)",
+    image: projectFour,
+    description: (
+      <p>
+        Rol backend en ASAP Consulting para cliente DIRECTV LATAM. Trabajo en mantenimiento evolutivo y correctivo de servicios internos en <strong>.NET</strong>, resolucion de incidentes via
+        Jira, mejora de flujos de negocio, refactorizacion de componentes, validacion con QA y documentacion tecnica para asegurar estabilidad en produccion. En frontend tambien trabaje con <strong>React.js</strong>
+        para pantallas internas y flujos de soporte operativo.
+      </p>
+    ),
+    sitioWeb: "https://www.directv.com.ar/",
+  },
 };
 
 export default projects;
