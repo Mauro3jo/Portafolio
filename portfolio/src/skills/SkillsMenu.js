@@ -42,9 +42,16 @@ export default class SkillsMenu extends Component {
 
   render() {
     const { activeMenuItem } = this.state;
-    const menuItems = ["BACK-END", "FRONT-END" ];
+    const { language = "es" } = this.props;
+    const menuItemsByLanguage = {
+      es: ["Back-end", "Front-end"],
+      en: ["Back-end", "Front-end"],
+    };
+    const menuItems = menuItemsByLanguage[language] || menuItemsByLanguage.es;
 
     const currentIcon = activeMenuItem === 1 ? backendIcon : frontendIcon;
+    const currentIconAlt =
+      language === "en" ? "Current skill icon" : "Icono de habilidad actual";
 
     return (
       <div className="skill-menu">
@@ -59,7 +66,7 @@ export default class SkillsMenu extends Component {
             <h2 className="skill-title">{item}</h2>
           </div>
         ))}
-        <img className="skill-icon" src={currentIcon} alt="current skill" />
+        <img className="skill-icon" src={currentIcon} alt={currentIconAlt} />
         <div className="skill-sub-container">
           {this.renderContent(skills[activeMenuItem])}
         </div>

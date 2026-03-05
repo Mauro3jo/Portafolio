@@ -4,10 +4,12 @@ import AboutMenu from "./AboutMenu.js";
 
 export default class About extends Component {
   render() {
+    const { language } = this.props;
+
     return (
       <>
         <Avatar page="about" />
-        <AboutMenu />
+        <AboutMenu language={language} />
       </>
     );
   }

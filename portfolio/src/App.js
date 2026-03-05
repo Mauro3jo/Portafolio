@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./nav/Nav.js";
 import About from "./about/About";
@@ -8,19 +8,30 @@ import "./styles/app.css";
 import Background from "./background/Background.js";
 import PlayerStats from "./playerStats/PlayerStats.js";
 import SoundtrackToggle from "./soundtrack/SoundtrackToggle.js";
+import { getInitialLanguage, LANGUAGE_STORAGE_KEY } from "./i18n/language.js";
 
 const App = () => {
+  const [language, setLanguage] = useState(getInitialLanguage);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+  }, [language]);
+
   return (
     <Router>
-      <Nav />
+      <Nav language={language} onLanguageChange={setLanguage} />
       <Background />
       <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/" element={<About language={language} />} />
+        <Route path="/skills" element={<Skills language={language} />} />
+        <Route path="/projects" element={<Projects language={language} />} />
       </Routes>
-      <PlayerStats />
-      <SoundtrackToggle />
+      <PlayerStats language={language} />
+      <SoundtrackToggle language={language} />
     </Router>
   );
 };

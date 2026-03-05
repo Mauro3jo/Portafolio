@@ -1,18 +1,14 @@
 
 import React, { Component } from "react";
 import classNames from "classnames";
-import projects from "./projectsData";
+import getProjectsData from "./projectsData";
 import "../styles/projectsMenu.css";
-
-const orderedProjectIds = Object.keys(projects)
-  .map((id) => Number(id))
-  .sort((a, b) => a - b);
 
 export default class ProjectsMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeProject: orderedProjectIds[0] ?? null,
+      activeProject: 1,
     };
   }
 
@@ -22,10 +18,17 @@ export default class ProjectsMenu extends Component {
     });
   };
 
-  renderContent = (project) => {
+  renderContent = (project, language) => {
     if (!project) {
-      return <p className="project-empty">No hay proyectos cargados.</p>;
+      return (
+        <p className="project-empty">
+          {language === "en" ? "No projects available." : "No hay proyectos cargados."}
+        </p>
+      );
     }
+
+    const websiteButtonText =
+      language === "en" ? "Visit website" : "Ir al sitio web";
 
     return (
       <div className="project-sub-content">
@@ -44,7 +47,7 @@ export default class ProjectsMenu extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Ir al sitio web
+            {websiteButtonText}
           </a>
         </div>
       </div>
@@ -53,11 +56,19 @@ export default class ProjectsMenu extends Component {
 
   render() {
     const { activeProject } = this.state;
+    const { language = "es" } = this.props;
+    const projects = getProjectsData(language);
+    const orderedProjectIds = Object.keys(projects)
+      .map((id) => Number(id))
+      .sort((a, b) => a - b);
+    const currentProjectId = projects[activeProject]
+      ? activeProject
+      : orderedProjectIds[0] ?? null;
     const projectItems = orderedProjectIds.map((id) => ({
       id,
       title: projects[id].title,
     }));
-    const selectedProject = activeProject ? projects[activeProject] : null;
+    const selectedProject = currentProjectId ? projects[currentProjectId] : null;
 
     return (
       <div className="project-menu">
@@ -67,16 +78,18 @@ export default class ProjectsMenu extends Component {
               type="button"
               key={item.id}
               className={classNames("project-item", {
-                activeProject: activeProject === item.id,
+                activeProject: currentProjectId === item.id,
               })}
               onClick={() => this.handleProjectClick(item.id)}
-              aria-pressed={activeProject === item.id}
+              aria-pressed={currentProjectId === item.id}
             >
               <h2 className="project-title">{item.title}</h2>
             </button>
           ))}
         </div>
-        <div className="project-sub-container">{this.renderContent(selectedProject)}</div>
+        <div className="project-sub-container">
+          {this.renderContent(selectedProject, language)}
+        </div>
       </div>
     );
   }

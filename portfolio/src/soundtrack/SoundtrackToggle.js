@@ -26,7 +26,7 @@ const getInitialEnabledState = () => {
   return true;
 };
 
-const SoundtrackToggle = () => {
+const SoundtrackToggle = ({ language = "es" }) => {
   const audioRef = useRef(null);
   const [isEnabled, setIsEnabled] = useState(getInitialEnabledState);
   const [hasAudioError, setHasAudioError] = useState(false);
@@ -102,9 +102,15 @@ const SoundtrackToggle = () => {
   }, [isEnabled, hasAudioError]);
 
   const buttonLabel = hasAudioError
-    ? "Musica no disponible. Falta el archivo de audio."
+    ? language === "en"
+      ? "Music unavailable. Audio file is missing."
+      : "Musica no disponible. Falta el archivo de audio."
     : isEnabled
-    ? "Pausar musica de fondo"
+    ? language === "en"
+      ? "Pause background music"
+      : "Pausar musica de fondo"
+    : language === "en"
+    ? "Play background music"
     : "Reproducir musica de fondo";
 
   return (

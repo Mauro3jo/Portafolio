@@ -24,17 +24,22 @@ const getCurrentLevel = () => {
   return level;
 };
 
-const PlayerStats = () => {
+const PlayerStats = ({ language = "es" }) => {
   const currentLevel = getCurrentLevel();
+  const levelLabel = language === "en" ? "LEVEL" : "NIVEL";
+  const roleLabel =
+    language === "en" ? "FULL STACK DEVELOPER" : "DESARROLLADOR FULL STACK";
 
   return (
     <div id="playerStats">
-      <h1>MAURO TREJO LEVEL {currentLevel}</h1>
+      <h1>
+        MAURO TREJO {levelLabel} {currentLevel}
+      </h1>
       <div id="playerStats__lines">
         <span id="playerStats__lines__thick"></span>
         <span id="playerStats__lines__thin"></span>
       </div>
-      <h2 className="player-role">FULLSTACK DEVELOPER</h2>
+      <h2 className="player-role">{roleLabel}</h2>
     </div>
   );
 };

@@ -3,9 +3,11 @@ import ProjectsMenu from "./ProjectsMenu";
 
 export default class Projects extends Component {
   render() {
+    const { language } = this.props;
+
     return (
       <>
-        <ProjectsMenu />
+        <ProjectsMenu language={language} />
       </>
     );
   }
