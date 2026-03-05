@@ -34,7 +34,7 @@ const PlayerStats = () => {
         <span id="playerStats__lines__thick"></span>
         <span id="playerStats__lines__thin"></span>
       </div>
-      <h2 style={{marginTop:"10px"}}>FULLSTACK DEVELOPER</h2>
+      <h2 className="player-role">FULLSTACK DEVELOPER</h2>
     </div>
   );
 };

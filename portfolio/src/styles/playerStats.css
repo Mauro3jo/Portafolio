@@ -7,6 +7,8 @@
   justify-content: space-between;
   top: 3rem;
   left: 3rem;
+  z-index: 5;
+  pointer-events: none;
 }
 
 #playerStats h1 {
@@ -17,6 +19,10 @@
 #playerStats h2 {
   margin: 0;
   font-size: 1rem;
+}
+
+#playerStats .player-role {
+  margin-top: 10px;
 }
 
 #playerStats__lines {
@@ -51,5 +57,54 @@
   }
   #playerStats h2 {
     font-size:16px;
+  }
+}
+
+@media (max-width: 700px) {
+  #playerStats {
+    top: max(0.7rem, env(safe-area-inset-top));
+    width: min(92vw, 20rem);
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    text-align: center;
+  }
+
+  #playerStats h1 {
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+  }
+
+  #playerStats h2 {
+    font-size: 0.73rem;
+  }
+
+  #playerStats .player-role {
+    margin-top: 0;
+  }
+
+  #playerStats__lines {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #playerStats__lines__thick {
+    width: min(57vw, 10rem);
+  }
+
+  #playerStats__lines__thin {
+    width: min(36vw, 6rem);
+  }
+}
+
+@media (max-width: 380px) {
+  #playerStats h1 {
+    font-size: 0.76rem;
+    letter-spacing: 0.015em;
+  }
+
+  #playerStats h2 {
+    font-size: 0.68rem;
   }
 }

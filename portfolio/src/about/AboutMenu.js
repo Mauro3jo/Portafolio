@@ -42,7 +42,7 @@ export default class AboutMenu extends Component {
     const subheadings = subheadingsData[activeMenuItem];
 
     return (
-      <>
+      <div className="about-menu-layout">
         <div className="menu">
           {menuItems.map((item, index) => (
             <AboutMenuItem
@@ -69,7 +69,7 @@ export default class AboutMenu extends Component {
             />
           ))}
         </div>
-      </>
+      </div>
     );
   }
 }

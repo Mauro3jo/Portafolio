@@ -5,6 +5,7 @@
   top: 3rem;
   gap: 1.5625rem;
   left: 48%;
+  z-index: 5;
 }
 
 .nav-about {
@@ -22,12 +23,19 @@
 
 .nav-link {
   width: 3.125rem;
+  min-height: 3.125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   text-decoration: none;
+}
+
+.nav-cv-label {
+  color: white;
+  font-size: 0.78rem;
+  line-height: 1;
 }
 
 .page-title {
@@ -67,5 +75,59 @@
   }
   .page-title {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    width: min(94vw, 24rem);
+    left: 50%;
+    top: auto;
+    bottom: max(0.65rem, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.32rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(8px);
+  }
+
+  .nav-link {
+    width: 2.6rem;
+    min-height: 2.3rem;
+    gap: 0.2rem;
+  }
+
+  .nav-link img {
+    width: 1.45rem;
+  }
+
+  .nav-cv-label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav {
+    width: 95vw;
+    padding: 0.42rem 0.55rem;
+    gap: 0.2rem;
+  }
+
+  .nav-link {
+    width: 2.35rem;
+    min-height: 2.1rem;
+    gap: 0.12rem;
+  }
+
+  .nav-link img {
+    width: 1.28rem;
+  }
+
+  .nav-cv-label {
+    font-size: 0.63rem;
   }
 }

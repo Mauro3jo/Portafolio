@@ -13,6 +13,25 @@ body {
   --transparent: #00000000;
   --radius-left: 3rem 0 0 3rem;
   --radius-right: 0 3rem 3rem 0;
+  --mobile-top-anchor: 7.2rem;
+  --mobile-content-anchor: 10.8rem;
+  --mobile-bottom-clearance: 5.3rem;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --mobile-top-anchor: clamp(6.55rem, 9.2vh, 7.65rem);
+    --mobile-content-anchor: clamp(9.9rem, 14.2vh, 11.25rem);
+    --mobile-bottom-clearance: clamp(4.95rem, 10.2vh, 5.45rem);
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --mobile-top-anchor: 6.55rem;
+    --mobile-content-anchor: 9.85rem;
+    --mobile-bottom-clearance: 4.95rem;
+  }
 }
 
 button:hover,

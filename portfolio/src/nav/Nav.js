@@ -134,9 +134,9 @@ export default function Nav() {
       {renderNavLink("/projects", stack, "stack icon", "nav-projects")}
 
       {/* Botón de descarga del CV como un elemento más del navbar */}
-      <a href="/CV_mauro_trejo.pdf" download className="nav-link" style={{textDecoration:"none"}}>
+      <a href="/CV_mauro_trejo.pdf" download className="nav-link nav-cv-link">
         <img src={enveloped} alt="Download CV icon" className="cv-download-icon" />
-       <span style={{color:"white"}}>CV</span> 
+        <span className="nav-cv-label">CV</span>
       </a>
     </nav>
   );
