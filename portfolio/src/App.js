@@ -7,6 +7,7 @@ import Projects from "./projects/Projects";
 import "./styles/app.css";
 import Background from "./background/Background.js";
 import PlayerStats from "./playerStats/PlayerStats.js";
+import SoundtrackToggle from "./soundtrack/SoundtrackToggle.js";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
       </Routes>
       <PlayerStats />
+      <SoundtrackToggle />
     </Router>
   );
 };
