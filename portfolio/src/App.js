@@ -8,10 +8,12 @@ import Contact from "./contact/Contact.js";
 import "./styles/app.css";
 import { getInitialLanguage, LANGUAGE_STORAGE_KEY } from "./i18n/language.js";
 import useScrollReveal from "./hooks/useScrollReveal.js";
+import useTheme from "./hooks/useTheme.js";
 
 const App = () => {
   const [language, setLanguage] = useState(getInitialLanguage);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const { theme, toggleTheme } = useTheme();
   useScrollReveal();
 
   useEffect(() => {
@@ -29,7 +31,7 @@ const App = () => {
 
   return (
     <>
-      <Nav language={language} onLanguageChange={setLanguage} />
+      <Nav language={language} onLanguageChange={setLanguage} theme={theme} onThemeToggle={toggleTheme} />
       <main>
         <section id="about">
           <Hero language={language} />

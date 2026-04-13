@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
 
+/* ── Dark theme (default) ── */
 :root {
   --bg: #080E1A;
   --bg-card: #0F1929;
@@ -11,15 +12,37 @@
   --text: #E8F4F8;
   --text-muted: #7B91A8;
   --border: #1A2840;
+  --nav-bg: rgba(8, 14, 26, 0.88);
+  --dot-color: rgba(255, 255, 255, 0.022);
   --nav-height: 4rem;
   --section-max: 1100px;
   --radius: 0.75rem;
+  --shadow-card: none;
 }
 
+/* ── Light theme ── */
+[data-theme="light"] {
+  --bg: #B8C8D8;
+  --bg-card: #CCDAE8;
+  --bg-card-hover: #C2D2E2;
+  --accent: #0099CC;
+  --accent-dim: rgba(0, 153, 204, 0.1);
+  --accent-glow: rgba(0, 153, 204, 0.18);
+  --border-accent: rgba(0, 153, 204, 0.35);
+  --text: #0F172A;
+  --text-muted: #3D5470;
+  --border: #9AAFC5;
+  --nav-bg: rgba(184, 200, 216, 0.93);
+  --dot-color: rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Transition suave al cambiar tema ── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
 html {
@@ -32,7 +55,7 @@ body {
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
   line-height: 1.6;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
@@ -81,26 +104,27 @@ section {
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.2s ease;
   cursor: pointer;
   border: none;
 }
 
 .btn--primary {
   background: var(--accent);
-  color: #080E1A;
+  color: #fff;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s !important;
 }
 
 .btn--primary:hover {
-  background: #33D4FF;
+  filter: brightness(1.12);
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(0, 200, 255, 0.25);
+  box-shadow: 0 8px 24px var(--accent-glow);
 }
 
 .btn--secondary {
   background: transparent;
   color: var(--text);
   border: 1px solid var(--border);
+  transition: border-color 0.2s, color 0.2s, transform 0.2s !important;
 }
 
 .btn--secondary:hover {
@@ -115,7 +139,7 @@ section {
   font-weight: 500;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--accent-dim);
   color: var(--text-muted);
   border: 1px solid var(--border);
   letter-spacing: 0.03em;
@@ -125,7 +149,7 @@ section {
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease !important;
 }
 
 .reveal--visible {
@@ -165,7 +189,7 @@ section {
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.25s, border-color 0.2s, color 0.2s, transform 0.2s;
+  transition: opacity 0.25s, border-color 0.2s, color 0.2s, transform 0.2s !important;
   z-index: 50;
 }
 
@@ -183,4 +207,4 @@ section {
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(0, 200, 255, 0.4); }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }

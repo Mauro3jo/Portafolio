@@ -47,6 +47,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
+  box-shadow: var(--shadow-card);
   transition: border-color 0.2s, transform 0.2s;
 }
 
