@@ -73,7 +73,7 @@ export default function Nav({ language = "es", onLanguageChange }) {
           </div>
 
           <a
-            href="/CV_mauro_trejo.pdf"
+            href={language === "en" ? "/CV_mauro_trejo_en.pdf" : "/CV_mauro_trejo.pdf"}
             download
             className="nav__cv-btn"
             aria-label={language === "en" ? "Download CV" : "Descargar CV"}

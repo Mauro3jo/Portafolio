@@ -54,6 +54,11 @@ const Hero = ({ language = "es" }) => {
         <h2 className="hero__role">{copy.role}</h2>
         <p className="hero__bio">{copy.bio}</p>
 
+        <div className="hero__languages" aria-label="Languages">
+          <span className="hero__lang-badge">🌐 Español — nativo</span>
+          <span className="hero__lang-badge">🇺🇸 English — B1</span>
+        </div>
+
         <div className="hero__stack" aria-label="Tech stack">
           {[".NET", "Laravel", "React.js", "React Native", "SQL Server", "AWS"].map((t) => (
             <span key={t} className="tech-chip">{t}</span>
@@ -77,7 +82,11 @@ const Hero = ({ language = "es" }) => {
           <a href="#projects" className="btn btn--primary">
             {copy.ctaPrimary}
           </a>
-          <a href="/CV_mauro_trejo.pdf" download className="btn btn--secondary">
+          <a
+            href={language === "en" ? "/CV_mauro_trejo_en.pdf" : "/CV_mauro_trejo.pdf"}
+            download
+            className="btn btn--secondary"
+          >
             {copy.ctaSecondary}
           </a>
         </div>
