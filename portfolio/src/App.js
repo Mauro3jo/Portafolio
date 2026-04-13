@@ -7,10 +7,12 @@ import Projects from "./projects/Projects.js";
 import Contact from "./contact/Contact.js";
 import "./styles/app.css";
 import { getInitialLanguage, LANGUAGE_STORAGE_KEY } from "./i18n/language.js";
+import useScrollReveal from "./hooks/useScrollReveal.js";
 
 const App = () => {
   const [language, setLanguage] = useState(getInitialLanguage);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  useScrollReveal();
 
   useEffect(() => {
     if (typeof window === "undefined") return;

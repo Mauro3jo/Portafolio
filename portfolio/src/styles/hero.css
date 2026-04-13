@@ -1,3 +1,8 @@
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .hero {
   min-height: calc(100vh - var(--nav-height));
   display: flex;
@@ -30,6 +35,8 @@
   color: var(--accent);
   letter-spacing: 0.12em;
   margin-bottom: 0.75rem;
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.05s;
 }
 
 .hero__name {
@@ -39,6 +46,8 @@
   color: var(--text);
   margin-bottom: 0.6rem;
   letter-spacing: -0.025em;
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.15s;
 }
 
 .hero__role {
@@ -47,6 +56,8 @@
   color: var(--text-muted);
   margin-bottom: 1.5rem;
   letter-spacing: 0.01em;
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.25s;
 }
 
 .hero__bio {
@@ -55,6 +66,8 @@
   max-width: 520px;
   line-height: 1.75;
   margin-bottom: 1.5rem;
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.35s;
 }
 
 .hero__languages {
@@ -62,6 +75,8 @@
   gap: 0.75rem;
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.42s;
 }
 
 .hero__lang-badge {
@@ -80,10 +95,14 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.5s;
 }
 
 /* Stats row */
 .hero__stats {
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.6s;
   display: flex;
   align-items: center;
   gap: 0;
@@ -128,9 +147,13 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.7s;
 }
 
 .hero__available {
+  animation: heroFadeUp 0.55s ease both;
+  animation-delay: 0.8s;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;

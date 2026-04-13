@@ -19,12 +19,12 @@ const Projects = ({ language = "es" }) => {
 
   return (
     <div className="container">
-      <p className="section-label">{label}</p>
-      <h2 className="section-title">{title}</h2>
+      <p className="section-label reveal">{label}</p>
+      <h2 className="section-title reveal" data-delay="1">{title}</h2>
 
       <div className="projects-grid">
-        {Object.values(projects).map((project) => (
-          <div key={project.title} className="project-card">
+        {Object.values(projects).map((project, index) => (
+          <div key={project.title} className="project-card reveal" data-delay={index + 1}>
             {project.image && (
               <div className="project-card__img-wrap">
                 <img

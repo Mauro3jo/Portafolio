@@ -55,13 +55,14 @@ const Experience = ({ language = "es" }) => {
 
   return (
     <div className="container">
-      <p className="section-label">{label}</p>
-      <h2 className="section-title">{title}</h2>
+      <p className="section-label reveal">{label}</p>
+      <h2 className="section-title reveal" data-delay="1">{title}</h2>
       <div className="exp-timeline">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <div
             key={item.id}
-            className={`exp-timeline__item ${item.current ? "exp-timeline__item--current" : ""}`}
+            className={`exp-timeline__item reveal ${item.current ? "exp-timeline__item--current" : ""}`}
+            data-delay={Math.min(index + 1, 5)}
           >
             <ExperienceCard item={item} language={language} />
           </div>

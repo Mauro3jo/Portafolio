@@ -27,10 +27,10 @@ const Contact = ({ language = "es" }) => {
 
   return (
     <div className="container contact">
-      <p className="section-label">{copy.label}</p>
-      <h2 className="section-title">{copy.title}</h2>
-      <p className="contact__subtitle">{copy.subtitle}</p>
-      <div className="contact__actions">
+      <p className="section-label reveal">{copy.label}</p>
+      <h2 className="section-title reveal" data-delay="1">{copy.title}</h2>
+      <p className="contact__subtitle reveal" data-delay="2">{copy.subtitle}</p>
+      <div className="contact__actions reveal" data-delay="3">
         <a
           href="https://www.linkedin.com/in/mauro-trejo-98968b1ab/"
           target="_blank"
