@@ -10,11 +10,20 @@ import { getInitialLanguage, LANGUAGE_STORAGE_KEY } from "./i18n/language.js";
 
 const App = () => {
   const [language, setLanguage] = useState(getInitialLanguage);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
   }, [language]);
+
+  useEffect(() => {
+    const onScroll = () => setShowScrollTop(window.scrollY > 400);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <>
@@ -23,19 +32,40 @@ const App = () => {
         <section id="about">
           <Hero language={language} />
         </section>
+
+        <hr className="section-divider" />
+
         <section id="experience">
           <Experience language={language} />
         </section>
+
+        <hr className="section-divider" />
+
         <section id="skills">
           <Skills language={language} />
         </section>
+
+        <hr className="section-divider" />
+
         <section id="projects">
           <Projects language={language} />
         </section>
+
+        <hr className="section-divider" />
+
         <section id="contact">
           <Contact language={language} />
         </section>
       </main>
+
+      <button
+        type="button"
+        className={`scroll-top ${showScrollTop ? "scroll-top--visible" : ""}`}
+        onClick={scrollToTop}
+        aria-label={language === "en" ? "Back to top" : "Volver arriba"}
+      >
+        ↑
+      </button>
     </>
   );
 };

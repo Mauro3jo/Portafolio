@@ -21,15 +21,16 @@ const localizedProjects = {
   es: {
     1: {
       title: "Zoco – Servicios de Pago",
-      stack: ["ASP.NET Core 6", "Entity Framework", "React.js", "SQL Server", "AWS"],
+      stack: ["ASP.NET Core 6", "React.js", "React Native", "Python", "WinForms", "SQL Server", "AWS"],
       description: (
         <p>
-          Plataforma empresarial de servicios de pago con más de <strong>75 módulos de negocio</strong> en{" "}
-          <strong>ASP.NET Core 6</strong>, arquitectura por capas (BLL/DAL/Entity), Repository Pattern e inyección de
-          dependencias. Incluye integración con <strong>AFIP</strong>, CRM con seguimiento y reglas de negocio,
-          gestión de comercios, procesamiento de pagos, control de anticipos, generación de PDF, reportes Excel y
-          módulo de compliance. Frontend con <strong>React.js</strong> para dashboard de agentes. Despliegue en{" "}
-          <strong>AWS</strong> con IIS.
+          Ecosistema completo de servicios de pago: plataforma web en <strong>ASP.NET Core 6</strong> con más de 75
+          módulos de negocio (CRM, compliance, gestión de comercios, procesamiento de pagos, integración con{" "}
+          <strong>AFIP</strong>, reportes y monitoreo); dashboard en <strong>React.js</strong>; app móvil en{" "}
+          <strong>React Native</strong> con notificaciones en background; herramienta de escritorio en{" "}
+          <strong>WinForms</strong> para carga y gestión de datos; y sistema de automatización de backoffice
+          financiero en <strong>Python</strong> y <strong>.NET 8</strong> para procesamiento de archivos Excel con
+          lógica por tarjeta (Visa, Mastercard, Maestro) e integración de macros.
         </p>
       ),
     },
@@ -51,10 +52,10 @@ const localizedProjects = {
       stack: [".NET", "ASP.NET Core", "React", "TypeScript", "SQL Server"],
       description: (
         <p>
-          Sistema de gestión de campo para <strong>DIRECTV LATAM</strong> con cobertura en 6 países (AR, CL, CO, EC,
-          PE, UY). Arquitectura de <strong>microservicios en .NET</strong> para el ciclo completo de órdenes de
-          servicio: creación, cancelación, programación, despacho y reasignación de técnicos. Procesos batch con
-          lógica por país, microservicio de autenticación <strong>JWT/SSO</strong> y frontend en{" "}
+          Sistema de gestión de campo para <strong>DIRECTV LATAM</strong> con cobertura en 6 países. Arquitectura
+          de <strong>microservicios en .NET</strong> para el ciclo completo de órdenes de servicio: creación,
+          cancelación, programación, despacho y reasignación de técnicos. Procesos batch con lógica por país,
+          microservicio de autenticación <strong>JWT/SSO</strong> y frontend en{" "}
           <strong>React + TypeScript</strong> para soporte operativo.
         </p>
       ),
@@ -63,14 +64,15 @@ const localizedProjects = {
   en: {
     1: {
       title: "Zoco – Payment Services",
-      stack: ["ASP.NET Core 6", "Entity Framework", "React.js", "SQL Server", "AWS"],
+      stack: ["ASP.NET Core 6", "React.js", "React Native", "Python", "WinForms", "SQL Server", "AWS"],
       description: (
         <p>
-          Enterprise payment services platform with <strong>75+ business modules</strong> built on{" "}
-          <strong>ASP.NET Core 6</strong> with layered architecture (BLL/DAL/Entity), Repository Pattern, and
-          dependency injection. Includes <strong>AFIP</strong> tax authority integration, CRM with business rules and
-          tracking, merchant management, payment processing, advance control, PDF generation, Excel reports, and a
-          compliance module. <strong>React.js</strong> agent dashboard. Deployed on <strong>AWS</strong> with IIS.
+          Full payment services ecosystem: web platform on <strong>ASP.NET Core 6</strong> with 75+ business modules
+          (CRM, compliance, merchant management, payment processing, <strong>AFIP</strong> integration, reports, and
+          monitoring); <strong>React.js</strong> dashboard; <strong>React Native</strong> mobile app with background
+          notifications; <strong>WinForms</strong> desktop tool for data upload and management; and a financial
+          backoffice automation system in <strong>Python</strong> and <strong>.NET 8</strong> for Excel processing
+          with per-card logic (Visa, Mastercard, Maestro) and macro integration.
         </p>
       ),
     },
@@ -92,11 +94,11 @@ const localizedProjects = {
       stack: [".NET", "ASP.NET Core", "React", "TypeScript", "SQL Server"],
       description: (
         <p>
-          Field service management system for <strong>DIRECTV LATAM</strong> covering 6 countries (AR, CL, CO, EC,
-          PE, UY). <strong>.NET microservices</strong> architecture for full service order lifecycle: creation,
-          cancellation, scheduling, dispatch, and technician reassignment. Country-specific batch processors, a{" "}
-          <strong>JWT/SSO</strong> authentication microservice, and a <strong>React + TypeScript</strong> frontend for
-          operational support.
+          Field service management system for <strong>DIRECTV LATAM</strong> covering 6 countries. <strong>.NET
+          microservices</strong> architecture for the full service order lifecycle: creation, cancellation,
+          scheduling, dispatch, and technician reassignment. Country-specific batch processors, a{" "}
+          <strong>JWT/SSO</strong> authentication microservice, and a <strong>React + TypeScript</strong> frontend
+          for operational support.
         </p>
       ),
     },

@@ -1,6 +1,17 @@
 import React from "react";
 import "../styles/hero.css";
 
+const getAge = () => {
+  const today = new Date();
+  const birthday = new Date(2000, 1, 3); // 3 feb 2000
+  let age = today.getFullYear() - birthday.getFullYear();
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birthday.getMonth() ||
+    (today.getMonth() === birthday.getMonth() && today.getDate() >= birthday.getDate());
+  if (!hasHadBirthdayThisYear) age -= 1;
+  return age;
+};
+
 const heroCopy = {
   es: {
     greeting: "Hola, soy",
@@ -32,6 +43,7 @@ const heroCopy = {
 
 const Hero = ({ language = "es" }) => {
   const copy = heroCopy[language] || heroCopy.es;
+  const age = getAge();
 
   return (
     <div className="hero">
@@ -49,6 +61,10 @@ const Hero = ({ language = "es" }) => {
         </div>
 
         <div className="hero__stats" aria-label="Stats">
+          <div className="hero__stat">
+            <span className="hero__stat-value">{age}</span>
+            <span className="hero__stat-label">{language === "en" ? "years old" : "años"}</span>
+          </div>
           {copy.stats.map((stat) => (
             <div key={stat.label} className="hero__stat">
               <span className="hero__stat-value">{stat.value}</span>

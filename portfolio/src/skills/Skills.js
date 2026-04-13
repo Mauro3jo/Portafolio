@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import skills from "./skillsData";
 import "../styles/skillsMenu.css";
 
+const MAX_LEVEL = 10;
+
 const sectionTitles = {
   es: { label: "// TECNOLOGÍAS", title: "Skills" },
   en: { label: "// TECHNOLOGIES", title: "Skills" },
 };
 
 const categoryLabels = {
-  es: { 1: "Back-end", 2: "Front-end" },
-  en: { 1: "Back-end", 2: "Front-end" },
+  es: { 1: "Back-end", 2: "Front-end", 3: "Herramientas" },
+  en: { 1: "Back-end", 2: "Front-end", 3: "Tools" },
 };
 
 const Skills = ({ language = "es" }) => {
@@ -45,12 +47,12 @@ const Skills = ({ language = "es" }) => {
           <div key={skill.title} className="skill-card">
             <div className="skill-card__info">
               <span className="skill-card__name">{skill.title}</span>
-              <span className="skill-card__level">{skill.level}/6</span>
+              <span className="skill-card__level">{skill.level}/{MAX_LEVEL}</span>
             </div>
             <div className="skill-card__bar">
               <div
                 className="skill-card__fill"
-                style={{ width: `${Math.round((skill.level / 6) * 100)}%` }}
+                style={{ width: `${(skill.level / MAX_LEVEL) * 100}%` }}
               ></div>
             </div>
           </div>

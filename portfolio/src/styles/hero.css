@@ -67,15 +67,26 @@
 /* Stats row */
 .hero__stats {
   display: flex;
-  gap: 2.5rem;
+  align-items: center;
+  gap: 0;
   margin-bottom: 2.5rem;
   flex-wrap: wrap;
+  row-gap: 1rem;
 }
 
 .hero__stat {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  padding: 0 1.75rem;
+}
+
+.hero__stat:first-child {
+  padding-left: 0;
+}
+
+.hero__stat + .hero__stat {
+  border-left: 1px solid var(--border);
 }
 
 .hero__stat-value {
@@ -87,10 +98,11 @@
 }
 
 .hero__stat-label {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   font-weight: 500;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .hero__actions {
@@ -128,6 +140,21 @@
 @media (max-width: 600px) {
   .hero {
     padding: 2.5rem 1.5rem;
+  }
+
+  .hero__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 0;
+  }
+
+  .hero__stat {
+    padding: 0;
+    border-left: none !important;
+  }
+
+  .hero__stat-value {
+    font-size: 1.5rem;
   }
 
   .hero__actions {

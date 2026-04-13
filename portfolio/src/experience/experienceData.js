@@ -5,7 +5,7 @@ const experienceData = {
       role: "Backend Developer",
       company: "ASAP Consulting S.A.",
       client: "DIRECTV LATAM",
-      period: "08/2025 — Actualidad",
+      period: "2025 — Actualidad",
       current: true,
       isEducation: false,
       description:
@@ -17,7 +17,7 @@ const experienceData = {
       role: "Full Stack Developer",
       company: "Zoco – Servicios de Pago",
       client: null,
-      period: "12/2022 — 07/2025",
+      period: "2022 — 2025",
       current: false,
       isEducation: false,
       description:
@@ -29,7 +29,7 @@ const experienceData = {
       role: "Full Stack Developer",
       company: "Trinidad Salud",
       client: null,
-      period: "03/2021 — Actualidad",
+      period: "2021 — Actualidad",
       current: false,
       isEducation: false,
       description:
@@ -55,7 +55,7 @@ const experienceData = {
       role: "Backend Developer",
       company: "ASAP Consulting S.A.",
       client: "DIRECTV LATAM",
-      period: "08/2025 — Present",
+      period: "2025 — Present",
       current: true,
       isEducation: false,
       description:
@@ -67,7 +67,7 @@ const experienceData = {
       role: "Full Stack Developer",
       company: "Zoco – Payment Services",
       client: null,
-      period: "12/2022 — 07/2025",
+      period: "2022 — 2025",
       current: false,
       isEducation: false,
       description:
@@ -79,7 +79,7 @@ const experienceData = {
       role: "Full Stack Developer",
       company: "Trinidad Salud",
       client: null,
-      period: "03/2021 — Present",
+      period: "2021 — Present",
       current: false,
       isEducation: false,
       description:
