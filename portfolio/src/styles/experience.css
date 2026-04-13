@@ -1,0 +1,156 @@
+.exp-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-left: 2.25rem;
+}
+
+/* Vertical line */
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 1.4rem;
+  bottom: 1.4rem;
+  width: 2px;
+  background: var(--border);
+}
+
+/* Dot on the line */
+.exp-timeline__item {
+  position: relative;
+}
+
+.exp-timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -1.9rem;
+  top: 1.3rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--bg);
+  z-index: 1;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.exp-timeline__item--current::before {
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+/* Card */
+.exp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.exp-card:hover {
+  border-color: rgba(0, 200, 255, 0.22);
+  transform: translateX(3px);
+}
+
+.exp-card--current {
+  border-color: rgba(0, 200, 255, 0.18);
+}
+
+.exp-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.exp-card__meta {
+  min-width: 0;
+}
+
+.exp-card__period {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+}
+
+.exp-card__role {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.exp-card__company {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.exp-card__client {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.exp-card__badge {
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.exp-card__badge--current {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--border-accent);
+}
+
+.exp-card__badge--edu {
+  background: rgba(99, 102, 241, 0.08);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.exp-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.exp-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+@media (max-width: 600px) {
+  .exp-timeline {
+    padding-left: 1.75rem;
+  }
+
+  .exp-timeline__item::before {
+    left: -1.5rem;
+  }
+
+  .exp-card__header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .exp-card {
+    padding: 1.2rem;
+  }
+}

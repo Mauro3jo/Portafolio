@@ -1,74 +1,27 @@
 const skills = {
   1: [
-    {
-      title: ".NET",
-      level: 6,
-    },
-    {
-      title: ".NET CORE",
-      level: 6,
-    },
-    {
-      title: "SQL",
-      level: 6,
-    },
-    {
-      title: "MYSQL",
-      level: 6,
-    },
-    {
-      title: "LARAVEL",
-      level: 6,
-    },
-    {
-      title: "Git",
-      level: 6,
-    },
-    {
-      title: "Docker",
-      level: 3,
-    },
-    {
-      title: "Node.js",
-      level: 3,
-    },
-   
-  
+    { title: "C# / .NET", level: 6 },
+    { title: "ASP.NET Core", level: 6 },
+    { title: "SQL Server", level: 6 },
+    { title: "MySQL", level: 5 },
+    { title: "Laravel", level: 5 },
+    { title: "Entity Framework", level: 6 },
+    { title: "Node.js", level: 4 },
+    { title: "Nest.js", level: 3 },
+    { title: "Git", level: 6 },
+    { title: "Docker", level: 3 },
+    { title: "AWS", level: 4 },
   ],
   2: [
-    {
-      title: "HTML",
-      level: 6,
-    },
-    {
-      title: "JavaScript",
-      level: 6,
-    },
-    {
-      title: "React JS",
-      level: 6,
-    },
-    {
-      title: "Vue.js",
-      level: 6,
-    },
-    {
-      title: "TypeScript",
-      level: 4,
-    },
- 
-    {
-      title: "CSS",
-      level: 3,
-    },
-    {
-      title: "Figma",
-      level: 3,
-    },
-
-
+    { title: "React.js", level: 6 },
+    { title: "JavaScript", level: 6 },
+    { title: "TypeScript", level: 5 },
+    { title: "React Native", level: 5 },
+    { title: "Next.js", level: 4 },
+    { title: "HTML5", level: 6 },
+    { title: "CSS3", level: 4 },
+    { title: "Bootstrap", level: 4 },
   ],
-
 };
 
 export default skills;

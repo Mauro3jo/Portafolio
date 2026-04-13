@@ -20,63 +20,83 @@ const projectAssets = {
 const localizedProjects = {
   es: {
     1: {
-      title: "Zoco Servicios de Pago",
+      title: "Zoco – Servicios de Pago",
+      stack: ["ASP.NET Core 6", "Entity Framework", "React.js", "SQL Server", "AWS"],
       description: (
         <p>
-          Plataforma empresarial de gran escala desarrollada con <strong>ASP.NET Core 6</strong>, <strong>Entity Framework</strong> y <strong>React.js</strong>. Implemente APIs RESTful seguras con
-          JWT, arquitectura por capas, principios SOLID, AutoMapper, consultas LINQ avanzadas y optimizacion en SQL Server. Tambien trabaje en jobs programados, reportes Excel con ClosedXML y
-          despliegue en AWS/Windows Server con IIS.
+          Plataforma empresarial de servicios de pago con más de <strong>75 módulos de negocio</strong> en{" "}
+          <strong>ASP.NET Core 6</strong>, arquitectura por capas (BLL/DAL/Entity), Repository Pattern e inyección de
+          dependencias. Incluye integración con <strong>AFIP</strong>, CRM con seguimiento y reglas de negocio,
+          gestión de comercios, procesamiento de pagos, control de anticipos, generación de PDF, reportes Excel y
+          módulo de compliance. Frontend con <strong>React.js</strong> para dashboard de agentes. Despliegue en{" "}
+          <strong>AWS</strong> con IIS.
         </p>
       ),
     },
     2: {
       title: "Trinidad Salud",
+      stack: ["Laravel 8", "React.js", "React Native", "MySQL", "AWS"],
       description: (
         <p>
-          Proyecto freelance full stack para una plataforma de gestion de salud. Desarrolle APIs RESTful en <strong>Laravel 8</strong> para sistema administrativo y app movil, con modulos de
-          afiliados, consultas, recetas, facturacion y reintegros. En frontend trabaje con <strong>React.js</strong> y tambien desarrolle una <strong>app de celular</strong> para afiliados,
-          conectada a las APIs del sistema. Ademas implemente autenticacion con Sanctum, roles/permisos con Spatie y despliegue en AWS.
+          Plataforma integral de gestión de salud. Backend en <strong>Laravel 8</strong> con más de 20 controladores
+          API para módulos de afiliados, consultas médicas, recetas, óptica, facturación y reintegros. Roles con{" "}
+          <strong>Spatie</strong> y autenticación con Sanctum. App móvil en{" "}
+          <strong>React Native (Expo)</strong> con pantallas de perfil, reintegros y autorizaciones, publicada en{" "}
+          <strong>Google Play</strong> y <strong>App Store</strong>. Desplegado en AWS.
         </p>
       ),
     },
     3: {
-      title: "DIRECTV LATAM (ASAP)",
+      title: "DIRECTV LATAM – Field Service Management",
+      stack: [".NET", "ASP.NET Core", "React", "TypeScript", "SQL Server"],
       description: (
         <p>
-          Rol backend en ASAP Consulting para cliente DIRECTV LATAM. Trabajo en mantenimiento evolutivo y correctivo de servicios internos en <strong>.NET</strong>, resolucion de incidentes via
-          Jira, mejora de flujos de negocio, refactorizacion de componentes, validacion con QA y documentacion tecnica para asegurar estabilidad en produccion. En frontend tambien trabaje con <strong>React.js</strong>
-          para pantallas internas y flujos de soporte operativo.
+          Sistema de gestión de campo para <strong>DIRECTV LATAM</strong> con cobertura en 6 países (AR, CL, CO, EC,
+          PE, UY). Arquitectura de <strong>microservicios en .NET</strong> para el ciclo completo de órdenes de
+          servicio: creación, cancelación, programación, despacho y reasignación de técnicos. Procesos batch con
+          lógica por país, microservicio de autenticación <strong>JWT/SSO</strong> y frontend en{" "}
+          <strong>React + TypeScript</strong> para soporte operativo.
         </p>
       ),
     },
   },
   en: {
     1: {
-      title: "Zoco Payment Services",
+      title: "Zoco – Payment Services",
+      stack: ["ASP.NET Core 6", "Entity Framework", "React.js", "SQL Server", "AWS"],
       description: (
         <p>
-          Enterprise-scale platform built with <strong>ASP.NET Core 6</strong>, <strong>Entity Framework</strong>, and <strong>React.js</strong>. I implemented secure REST APIs with JWT,
-          layered architecture, SOLID principles, AutoMapper, advanced LINQ queries, and SQL Server optimization. I also worked on scheduled jobs, Excel reporting with ClosedXML, and deployment to
-          AWS/Windows Server with IIS.
+          Enterprise payment services platform with <strong>75+ business modules</strong> built on{" "}
+          <strong>ASP.NET Core 6</strong> with layered architecture (BLL/DAL/Entity), Repository Pattern, and
+          dependency injection. Includes <strong>AFIP</strong> tax authority integration, CRM with business rules and
+          tracking, merchant management, payment processing, advance control, PDF generation, Excel reports, and a
+          compliance module. <strong>React.js</strong> agent dashboard. Deployed on <strong>AWS</strong> with IIS.
         </p>
       ),
     },
     2: {
       title: "Trinidad Salud",
+      stack: ["Laravel 8", "React.js", "React Native", "MySQL", "AWS"],
       description: (
         <p>
-          Freelance full stack project for a healthcare management platform. I built REST APIs with <strong>Laravel 8</strong> for the admin system and mobile app, covering members, appointments,
-          prescriptions, billing, and reimbursements. On the frontend I worked with <strong>React.js</strong> and also delivered a <strong>mobile app</strong> connected to the same APIs. I also
-          implemented Sanctum authentication, Spatie roles/permissions, and AWS deployment.
+          Comprehensive health management platform. <strong>Laravel 8</strong> backend with 20+ API controllers
+          covering member management, medical appointments, prescriptions, optical care, billing, and reimbursements.
+          Roles with <strong>Spatie</strong> and Sanctum authentication. <strong>React Native (Expo)</strong> mobile
+          app with profile, reimbursements, and authorizations screens, published on <strong>Google Play</strong> and{" "}
+          <strong>App Store</strong>. Deployed on AWS.
         </p>
       ),
     },
     3: {
-      title: "DIRECTV LATAM (ASAP)",
+      title: "DIRECTV LATAM – Field Service Management",
+      stack: [".NET", "ASP.NET Core", "React", "TypeScript", "SQL Server"],
       description: (
         <p>
-          Backend role at ASAP Consulting for DIRECTV LATAM. I worked on maintenance and incident resolution for internal production services in <strong>.NET</strong>, including Jira-based
-          troubleshooting, business-flow improvements, refactoring, QA validation, and technical documentation. I also contributed to internal frontend support flows using <strong>React.js</strong>.
+          Field service management system for <strong>DIRECTV LATAM</strong> covering 6 countries (AR, CL, CO, EC,
+          PE, UY). <strong>.NET microservices</strong> architecture for full service order lifecycle: creation,
+          cancellation, scheduling, dispatch, and technician reassignment. Country-specific batch processors, a{" "}
+          <strong>JWT/SSO</strong> authentication microservice, and a <strong>React + TypeScript</strong> frontend for
+          operational support.
         </p>
       ),
     },
@@ -91,7 +111,6 @@ const getProjectsData = (language = "es") => {
       ...projectAssets[projectId],
       ...localizedData[projectId],
     };
-
     return accumulator;
   }, {});
 };
