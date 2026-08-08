@@ -22,7 +22,7 @@ const heroCopy = {
     available: "Abierto a nuevos desafíos y proyectos",
     stats: [
       { value: "6+", label: "años de experiencia" },
-      { value: "75+", label: "módulos desarrollados" },
+      { value: "3", label: "apps publicadas en Zoco" },
       { value: "6", label: "países LATAM" },
     ],
   },
@@ -35,7 +35,7 @@ const heroCopy = {
     available: "Open to new challenges and projects",
     stats: [
       { value: "6+", label: "years of experience" },
-      { value: "75+", label: "modules built" },
+      { value: "3", label: "apps released at Zoco" },
       { value: "6", label: "LATAM countries" },
     ],
   },

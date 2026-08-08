@@ -33,7 +33,7 @@ const experienceData = {
       current: false,
       isEducation: false,
       description:
-        "Desarrollé soluciones web, mobile y desktop para pagos, operaciones y eventos. Construí y publiqué tres aplicaciones móviles: Zoco, Zoco Tickets y Zoco Scanner. Trabajé sobre una plataforma ASP.NET Core con más de 75 módulos, APIs seguras, dashboard React, SQL Server e integraciones de negocio. Además creé herramientas WinForms y .NET 8 para carga masiva de datos y automatización financiera de archivos Excel con reglas por tarjeta, QR, macros y controles de calidad.",
+        "Desarrollé soluciones web, mobile y desktop para pagos, operaciones y eventos. Construí y publiqué Zoco, Zoco Tickets y Zoco Scanner. En la plataforma ASP.NET Core + React implementé CRM y seguimiento comercial, altas y bajas de comercios, liquidaciones e impuestos, órdenes de pago y anticipos, compliance transaccional, monitoreo operativo, legajos, reportes PDF/Excel, cupones, fidelización y paneles por rol. Además creé herramientas WinForms y .NET 8 para carga masiva y automatización financiera de Excel con reglas por tarjeta, QR, macros y controles de calidad.",
       stack: ["ASP.NET Core", "React", "React Native", ".NET 8", "WinForms", "SQL Server", "Excel Interop", "AWS"],
     },
     {
@@ -107,7 +107,7 @@ const experienceData = {
       current: false,
       isEducation: false,
       description:
-        "Built web, mobile and desktop solutions for payments, operations and events. I developed and published three mobile apps: Zoco, Zoco Tickets and Zoco Scanner. I worked on an ASP.NET Core platform with 75+ modules, secure APIs, a React dashboard, SQL Server and business integrations. I also created WinForms and .NET 8 tools for bulk data uploads and financial Excel automation with card-specific rules, QR workflows, macros and quality controls.",
+        "Built web, mobile and desktop solutions for payments, operations and events, including the development and release of Zoco, Zoco Tickets and Zoco Scanner. On the ASP.NET Core + React platform I implemented CRM and sales tracking, merchant onboarding and offboarding, settlements and taxes, payment orders and advances, transaction compliance, operational monitoring, employee records, PDF/Excel reporting, coupons, loyalty features and role-based panels. I also created WinForms and .NET 8 tools for bulk uploads and financial Excel automation with card-specific rules, QR workflows, macros and quality controls.",
       stack: ["ASP.NET Core", "React", "React Native", ".NET 8", "WinForms", "SQL Server", "Excel Interop", "AWS"],
     },
     {

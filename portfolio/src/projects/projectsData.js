@@ -30,7 +30,7 @@ const localizedProjects = {
       image: zocoImage,
       stack: ["ASP.NET Core", "React", "SQL Server", "JWT", "AWS"],
       description:
-        "Plataforma empresarial de servicios de pago con más de 75 módulos: CRM, comercios, transacciones, anticipos, compliance, reportes, monitoreo e integraciones. Trabajé en backend, frontend, base de datos, seguridad y despliegue.",
+        "Plataforma empresarial donde desarrollé CRM con prospectos, reglas y seguimiento; altas, modificaciones y bajas de comercios; liquidaciones, AFIP e IIBB; órdenes de pago y anticipos; compliance transaccional; monitoreo operativo; legajos; reportes PDF/Excel; cupones, fidelización, notificaciones y paneles específicos para aliados, asesores, calidad y administración.",
       links: [{ label: "Ver Zoco Pagos", url: urls.zocoWeb }],
     },
     {
@@ -38,7 +38,7 @@ const localizedProjects = {
       eyebrow: "DESARROLLO Y PUBLICACIÓN",
       stack: ["React Native", "Expo", "REST APIs", "Notificaciones", "Biometría"],
       description:
-        "Aplicación oficial para usuarios de Zoco. La desarrollé para consultar transacciones, dashboards, estadísticas e información operativa desde el celular, con autenticación, notificaciones y consumo de APIs del ecosistema.",
+        "Aplicación oficial para aliados de Zoco. La desarrollé con inicio de sesión biométrico, dashboards y evolución mensual, análisis de ventas, contabilidad e impuestos, consulta y exportación de cupones, solicitudes operativas, simuladores de financiación, calificaciones, PDFs y notificaciones inteligentes en segundo plano.",
       links: [{ label: "Google Play", url: urls.zocoApp }],
     },
     {
@@ -142,7 +142,7 @@ const localizedProjects = {
       image: zocoImage,
       stack: ["ASP.NET Core", "React", "SQL Server", "JWT", "AWS"],
       description:
-        "Enterprise payment-services platform with 75+ modules spanning CRM, merchants, transactions, advances, compliance, reporting, monitoring and integrations. I worked across backend, frontend, database, security and deployment.",
+        "Enterprise platform where I developed CRM with prospects, rules and tracking; merchant onboarding, changes and offboarding; settlements, AFIP and provincial taxes; payment orders and advances; transaction compliance; operational monitoring; employee records; PDF/Excel reports; coupons, loyalty, notifications and dedicated panels for merchants, sales, quality and administration.",
       links: [{ label: "Visit Zoco Payments", url: urls.zocoWeb }],
     },
     {
@@ -150,7 +150,7 @@ const localizedProjects = {
       eyebrow: "DEVELOPMENT AND RELEASE",
       stack: ["React Native", "Expo", "REST APIs", "Notifications", "Biometrics"],
       description:
-        "Official app for Zoco users. I developed it to provide mobile access to transactions, dashboards, statistics and operational information, with authentication, notifications and ecosystem API integration.",
+        "Official app for Zoco merchants. I developed biometric login, dashboards and monthly trends, sales analytics, accounting and taxes, coupon lookup and export, operational requests, financing simulators, ratings, PDF documents and intelligent background notifications.",
       links: [{ label: "Google Play", url: urls.zocoApp }],
     },
     {
