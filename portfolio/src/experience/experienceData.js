@@ -14,15 +14,15 @@ const experienceData = {
     },
     {
       id: 2,
-      role: "Backend Developer",
+      role: "Full Stack Developer",
       company: "ASAP Consulting S.A.",
       client: "DIRECTV LATAM",
       period: "Ago 2025 — Jul 2026",
       current: false,
       isEducation: false,
       description:
-        "Desarrollo y mantenimiento de aplicaciones para la operación regional de DIRECTV LATAM. Trabajé en microservicios .NET, APIs REST e integraciones para el ciclo de órdenes de servicio, asignación de técnicos, disponibilidad y configuración operativa en seis países. También desarrollé interfaces en React + TypeScript, procesos batch multipaís y herramientas internas para automatizar validaciones, reducir errores y agilizar soporte. Participé en productos como MiDIRECTV y Optimus dentro de equipos multidisciplinarios.",
-      stack: [".NET", "ASP.NET Core", "React", "TypeScript", "SQL Server", "Oracle", "JWT/SSO", "Docker", "Jira"],
+        "Desarrollo full stack de aplicaciones web, mobile y backend para la operación regional de DIRECTV LATAM. Trabajé en microservicios .NET, APIs REST e integraciones para órdenes de servicio, asignación de técnicos, disponibilidad y configuración operativa en seis países; interfaces web con React + TypeScript; y funcionalidades mobile dentro de productos de DIRECTV. También desarrollé procesos batch multipaís y herramientas internas para automatizar validaciones, reducir errores y agilizar soporte. Participé en MiDIRECTV, Optimus y DGO dentro de equipos multidisciplinarios.",
+      stack: [".NET", "ASP.NET Core", "React", "TypeScript", "React Native", "SQL Server", "Oracle", "JWT/SSO", "Docker", "Jira"],
     },
     {
       id: 3,
@@ -88,15 +88,15 @@ const experienceData = {
     },
     {
       id: 2,
-      role: "Backend Developer",
+      role: "Full Stack Developer",
       company: "ASAP Consulting S.A.",
       client: "DIRECTV LATAM",
       period: "Aug 2025 — Jul 2026",
       current: false,
       isEducation: false,
       description:
-        "Developed and maintained applications supporting DIRECTV LATAM's regional operations. I worked on .NET microservices, REST APIs and integrations for service-order lifecycles, technician assignment, availability and operational configuration across six countries. I also built React + TypeScript interfaces, multi-country batch processes and internal tools that automated validations, reduced errors and streamlined support. I contributed to products such as MiDIRECTV and Optimus as part of multidisciplinary teams.",
-      stack: [".NET", "ASP.NET Core", "React", "TypeScript", "SQL Server", "Oracle", "JWT/SSO", "Docker", "Jira"],
+        "Full stack development of web, mobile and backend applications supporting DIRECTV LATAM's regional operations. I worked on .NET microservices, REST APIs and integrations for service orders, technician assignment, availability and operational configuration across six countries; web interfaces with React + TypeScript; and mobile functionality within DIRECTV products. I also built multi-country batch processes and internal tools that automated validations, reduced errors and streamlined support. I contributed to MiDIRECTV, Optimus and DGO as part of multidisciplinary teams.",
+      stack: [".NET", "ASP.NET Core", "React", "TypeScript", "React Native", "SQL Server", "Oracle", "JWT/SSO", "Docker", "Jira"],
     },
     {
       id: 3,

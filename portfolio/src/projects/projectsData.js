@@ -75,33 +75,33 @@ const localizedProjects = {
       title: "MiDIRECTV",
       eyebrow: "PARTICIPACIÓN EN EQUIPO",
       image: directvImage,
-      stack: [".NET", "REST APIs", "Microservicios", "SQL Server", "Integraciones"],
+      stack: [".NET", "React", "React Native", "REST APIs", "Microservicios", "SQL Server"],
       description:
-        "Participé dentro del equipo de DIRECTV en servicios e integraciones vinculados con la experiencia de autogestión de clientes, soporte técnico y seguimiento de operaciones. El producto permite administrar cuentas, pagos, planes y visitas técnicas.",
+        "Participé dentro del equipo de DIRECTV en backend, frontend y mobile, trabajando sobre servicios, integraciones e interfaces vinculadas con la autogestión de clientes, soporte técnico y seguimiento de operaciones. El producto permite administrar cuentas, pagos, planes y visitas técnicas.",
       links: [{ label: "Google Play", url: urls.miDirectv }],
     },
     {
       title: "Optimus Plus",
       eyebrow: "PARTICIPACIÓN EN EQUIPO · MULTIPAÍS",
-      stack: [".NET", "Oracle Field Service", "REST APIs", "SQL Server", "Procesos batch"],
+      stack: [".NET", "React", "React Native", "Oracle Field Service", "REST APIs", "Procesos batch"],
       description:
-        "Participé en servicios que soportan la gestión de órdenes de trabajo de técnicos de DIRECTV. Trabajé con creación, cancelación, agenda, despacho, reasignación y reglas específicas para operaciones de distintos países.",
+        "Participé en backend, frontend y mobile para la gestión de órdenes de trabajo de técnicos de DIRECTV. Trabajé con creación, cancelación, agenda, despacho, reasignación, experiencia operativa y reglas específicas para distintos países.",
       links: [{ label: "Optimus Argentina", url: urls.optimus }],
     },
     {
       title: "DGO",
       eyebrow: "PARTICIPACIÓN EN EQUIPO",
-      stack: [".NET", "APIs REST", "Integraciones", "Soporte productivo"],
+      stack: [".NET", "React", "React Native", "APIs REST", "Integraciones", "Soporte productivo"],
       description:
-        "Participé en el ecosistema tecnológico de DGO dentro de DIRECTV LATAM, colaborando sobre servicios, integraciones y mantenimiento de funcionalidades productivas de la plataforma de streaming y televisión online.",
+        "Participé en el ecosistema tecnológico de DGO dentro de DIRECTV LATAM, colaborando en backend, frontend y mobile sobre servicios, integraciones y mantenimiento de funcionalidades productivas de la plataforma de streaming y televisión online.",
       links: [{ label: "Google Play", url: urls.dgo }],
     },
     {
       title: "DIRECTV — Field Service Management",
       eyebrow: "BACKEND Y HERRAMIENTAS INTERNAS · 6 PAÍSES",
-      stack: [".NET", "React", "TypeScript", "Oracle", "Docker", "JWT/SSO"],
+      stack: [".NET", "React", "TypeScript", "React Native", "Oracle", "Docker", "JWT/SSO"],
       description:
-        "Microservicios y paneles para órdenes de servicio, disponibilidad, autenticación y configuración operativa en Argentina, Chile, Colombia, Ecuador, Perú y Uruguay. Incluye procesos batch y herramientas para reducir errores y tiempos de soporte.",
+        "Desarrollo full stack de microservicios, paneles web y funcionalidades mobile para órdenes de servicio, disponibilidad, autenticación y configuración operativa en Argentina, Chile, Colombia, Ecuador, Perú y Uruguay. Incluye procesos batch y herramientas para reducir errores y tiempos de soporte.",
     },
     {
       title: "Trinidad Salud — Web y administración",
@@ -187,33 +187,33 @@ const localizedProjects = {
       title: "MiDIRECTV",
       eyebrow: "TEAM CONTRIBUTION",
       image: directvImage,
-      stack: [".NET", "REST APIs", "Microservices", "SQL Server", "Integrations"],
+      stack: [".NET", "React", "React Native", "REST APIs", "Microservices", "SQL Server"],
       description:
-        "As part of the DIRECTV team, I contributed to services and integrations related to customer self-service, technical support and operation tracking. The product supports account, payment, plan and technical-visit management.",
+        "As part of the DIRECTV team, I contributed across backend, frontend and mobile, working on services, integrations and interfaces related to customer self-service, technical support and operation tracking. The product supports account, payment, plan and technical-visit management.",
       links: [{ label: "Google Play", url: urls.miDirectv }],
     },
     {
       title: "Optimus Plus",
       eyebrow: "TEAM CONTRIBUTION · MULTI-COUNTRY",
-      stack: [".NET", "Oracle Field Service", "REST APIs", "SQL Server", "Batch processing"],
+      stack: [".NET", "React", "React Native", "Oracle Field Service", "REST APIs", "Batch processing"],
       description:
-        "I contributed to services supporting DIRECTV technician work-order management, including creation, cancellation, scheduling, dispatch, reassignment and country-specific operational rules.",
+        "I contributed across backend, frontend and mobile to DIRECTV technician work-order management, including creation, cancellation, scheduling, dispatch, reassignment, operational experience and country-specific rules.",
       links: [{ label: "Optimus Argentina", url: urls.optimus }],
     },
     {
       title: "DGO",
       eyebrow: "TEAM CONTRIBUTION",
-      stack: [".NET", "REST APIs", "Integrations", "Production support"],
+      stack: [".NET", "React", "React Native", "REST APIs", "Integrations", "Production support"],
       description:
-        "I contributed to the DGO technology ecosystem within DIRECTV LATAM, collaborating on services, integrations and maintenance of production functionality for its streaming and online-TV platform.",
+        "I contributed to the DGO technology ecosystem within DIRECTV LATAM across backend, frontend and mobile, collaborating on services, integrations and maintenance of production functionality for its streaming and online-TV platform.",
       links: [{ label: "Google Play", url: urls.dgo }],
     },
     {
       title: "DIRECTV — Field Service Management",
       eyebrow: "BACKEND AND INTERNAL TOOLS · 6 COUNTRIES",
-      stack: [".NET", "React", "TypeScript", "Oracle", "Docker", "JWT/SSO"],
+      stack: [".NET", "React", "TypeScript", "React Native", "Oracle", "Docker", "JWT/SSO"],
       description:
-        "Microservices and panels for service orders, availability, authentication and operational configuration across Argentina, Chile, Colombia, Ecuador, Peru and Uruguay, including batch processes and support automation.",
+        "Full stack development of microservices, web panels and mobile functionality for service orders, availability, authentication and operational configuration across Argentina, Chile, Colombia, Ecuador, Peru and Uruguay, including batch processes and support automation.",
     },
     {
       title: "Trinidad Salud — Web and administration",
