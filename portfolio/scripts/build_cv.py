@@ -41,8 +41,8 @@ DATA = {
                 "company": "PinApp · Real Plaza",
                 "date": "Jul 2026 - Actualidad",
                 "bullets": [
-                    "Evolución de la app Real Plaza y servicios backend con React Native, .NET/C#, SQL Server, Firebase y Azure.",
-                    "Integración de APIs, CI/CD y participación en decisiones técnicas y arquitectura de un producto con más de 1M de descargas.",
+                    "Desarrollo y evolución de la aplicación mobile de Real Plaza y sus servicios backend con React Native, .NET y C#.",
+                    "Integración de APIs REST, SQL Server, Firebase y Azure; participación en arquitectura, decisiones técnicas, CI/CD y mejora continua.",
                 ],
             },
             {
@@ -50,9 +50,9 @@ DATA = {
                 "company": "ASAP Consulting · DIRECTV LATAM",
                 "date": "Ago 2025 - Jul 2026",
                 "bullets": [
-                    "Desarrollo backend, frontend y mobile con .NET, React, TypeScript y React Native para operaciones en 6 países.",
-                    "Microservicios e integraciones para órdenes de servicio, agenda, despacho, técnicos, autenticación y Oracle Field Service.",
-                    "Participación en MiDIRECTV, Optimus y DGO; automatización de validaciones y soporte productivo junto a QA SIT/UAT.",
+                    "Desarrollo full stack de aplicaciones web, mobile y backend para la operación regional de DIRECTV LATAM.",
+                    "Microservicios .NET, APIs e integraciones para órdenes de servicio, técnicos, disponibilidad y configuración operativa; interfaces React + TypeScript y funcionalidades mobile.",
+                    "Procesos batch multipaís y herramientas internas para automatizar validaciones y soporte; participación en MiDIRECTV, Optimus y DGO.",
                 ],
             },
             {
@@ -60,18 +60,27 @@ DATA = {
                 "company": "Zoco - Servicios de Pago",
                 "date": "Dic 2021 - Jul 2025",
                 "bullets": [
-                    "Plataforma ASP.NET Core + React: CRM, comercios, liquidaciones, AFIP/IIBB, compliance, monitoreo y reportes PDF/Excel.",
-                    "Desarrollo y publicación de Zoco, Zoco Tickets y Zoco Scanner con React Native, APIs, biometría, QR y notificaciones.",
-                    "Integración de leads de Meta y asistente contextual con IA; automatización financiera en .NET 8, WinForms y Excel.",
+                    "Soluciones web, mobile y desktop para pagos, operaciones y eventos; desarrollo y publicación de Zoco, Zoco Tickets y Zoco Scanner.",
+                    "Plataforma ASP.NET Core + React con CRM, leads de Meta, asistente con IA, gestión de comercios, liquidaciones, impuestos, compliance, monitoreo, reportes y paneles por rol.",
+                    "Herramientas WinForms y .NET 8 para carga masiva y automatización financiera de Excel con reglas, QR, macros y controles de calidad.",
                 ],
             },
             {
                 "role": "Full Stack Developer",
-                "company": "Trinidad Salud · Freelance",
+                "company": "Trinidad Salud",
                 "date": "Mar 2021 - Actualidad",
                 "bullets": [
-                    "Ecosistema Laravel, React, React Native y MySQL para afiliados, credenciales, consultas, facturación, reintegros y autorizaciones.",
-                    "APIs, autenticación y roles, PDFs, panel administrativo, app mobile, sitios institucionales y despliegue en AWS.",
+                    "Ecosistema de salud con backend y APIs Laravel, panel React, aplicación React Native y sitios institucionales desplegados en AWS.",
+                    "Gestión de afiliados, planes, consultas, recetas, facturación, credenciales, reintegros y autorizaciones; autenticación, roles, permisos y PDFs.",
+                ],
+            },
+            {
+                "role": "Full Stack Developer independiente",
+                "company": "Profesional independiente",
+                "date": "Feb 2020 - Actualidad",
+                "bullets": [
+                    "Diseño y desarrollo integral de soluciones web y mobile: relevamiento, arquitectura, APIs, interfaces, bases de datos, despliegue y mantenimiento.",
+                    "Digitalización de procesos y construcción de sistemas de gestión, landing pages y plataformas con React, Laravel, .NET y React Native.",
                 ],
             },
         ],
@@ -100,8 +109,8 @@ DATA = {
                 "company": "PinApp · Real Plaza",
                 "date": "Jul 2026 - Present",
                 "bullets": [
-                    "Evolving the Real Plaza app and backend services with React Native, .NET/C#, SQL Server, Firebase and Azure.",
-                    "API integration, CI/CD and technical and architectural decisions for a product with 1M+ downloads.",
+                    "Development and evolution of the Real Plaza mobile app and its backend services with React Native, .NET and C#.",
+                    "REST API, SQL Server, Firebase and Azure integration; contribution to architecture, technical decisions, CI/CD and continuous improvement.",
                 ],
             },
             {
@@ -109,9 +118,9 @@ DATA = {
                 "company": "ASAP Consulting · DIRECTV LATAM",
                 "date": "Aug 2025 - Jul 2026",
                 "bullets": [
-                    "Backend, frontend and mobile development with .NET, React, TypeScript and React Native for operations in 6 countries.",
-                    "Microservices and integrations for service orders, scheduling, dispatch, technicians, authentication and Oracle Field Service.",
-                    "Contributed to MiDIRECTV, Optimus and DGO; automated validations and provided production support with SIT/UAT QA teams.",
+                    "Full stack development of web, mobile and backend applications supporting DIRECTV LATAM's regional operations.",
+                    ".NET microservices, APIs and integrations for service orders, technicians, availability and operational configuration; React + TypeScript interfaces and mobile functionality.",
+                    "Multi-country batch processes and internal tools for automated validations and support; contributions to MiDIRECTV, Optimus and DGO.",
                 ],
             },
             {
@@ -119,18 +128,27 @@ DATA = {
                 "company": "Zoco - Payment Services",
                 "date": "Dec 2021 - Jul 2025",
                 "bullets": [
-                    "ASP.NET Core + React platform covering CRM, merchants, settlements, taxes, compliance, monitoring and PDF/Excel reporting.",
-                    "Developed and released Zoco, Zoco Tickets and Zoco Scanner with React Native, APIs, biometrics, QR and notifications.",
-                    "Built Meta lead integration and a contextual AI assistant; automated finance workflows with .NET 8, WinForms and Excel.",
+                    "Web, mobile and desktop solutions for payments, operations and events, including the development and release of Zoco, Zoco Tickets and Zoco Scanner.",
+                    "ASP.NET Core + React platform with CRM, Meta leads, an AI assistant, merchant management, settlements, taxes, compliance, monitoring, reporting and role-based panels.",
+                    "WinForms and .NET 8 tools for bulk uploads and financial Excel automation with rules, QR workflows, macros and quality controls.",
                 ],
             },
             {
                 "role": "Full Stack Developer",
-                "company": "Trinidad Salud · Freelance",
+                "company": "Trinidad Salud",
                 "date": "Mar 2021 - Present",
                 "bullets": [
-                    "Laravel, React, React Native and MySQL ecosystem for members, digital cards, appointments, billing, reimbursements and authorizations.",
-                    "APIs, authentication and roles, PDFs, admin panel, mobile app, institutional websites and AWS deployment.",
+                    "Healthcare ecosystem with a Laravel backend and APIs, React admin panel, React Native app and institutional websites deployed on AWS.",
+                    "Member and plan management, appointments, prescriptions, billing, digital cards, reimbursements and authorizations; authentication, roles, permissions and PDFs.",
+                ],
+            },
+            {
+                "role": "Independent Full Stack Developer",
+                "company": "Freelance",
+                "date": "Feb 2020 - Present",
+                "bullets": [
+                    "End-to-end web and mobile solutions: discovery, architecture, APIs, interfaces, databases, deployment and maintenance.",
+                    "Process digitization and development of management systems, landing pages and platforms with React, Laravel, .NET and React Native.",
                 ],
             },
         ],
