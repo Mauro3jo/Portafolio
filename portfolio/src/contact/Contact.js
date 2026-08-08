@@ -7,18 +7,22 @@ const contactCopy = {
     title: "Hablemos",
     subtitle:
       "Estoy disponible para nuevas oportunidades. ¿Tenés un proyecto en mente o querés conocer más sobre mi trabajo?",
-    linkedin: "Escribime en LinkedIn",
+    whatsapp: "Escribime por WhatsApp",
+    email: "Enviar email",
+    linkedin: "LinkedIn",
     github: "Ver mi GitHub",
-    footer: "Mauro Trejo · Full Stack Developer · Argentina",
+    footer: "Mauro Trejo · Senior Full Stack Developer · Argentina",
   },
   en: {
     label: "// CONTACT",
     title: "Let's talk",
     subtitle:
       "I'm open to new opportunities. Have a project in mind or want to learn more about my work?",
-    linkedin: "Message me on LinkedIn",
+    whatsapp: "Message me on WhatsApp",
+    email: "Send email",
+    linkedin: "LinkedIn",
     github: "View my GitHub",
-    footer: "Mauro Trejo · Full Stack Developer · Argentina",
+    footer: "Mauro Trejo · Senior Full Stack Developer · Argentina",
   },
 };
 
@@ -32,10 +36,21 @@ const Contact = ({ language = "es" }) => {
       <p className="contact__subtitle reveal" data-delay="2">{copy.subtitle}</p>
       <div className="contact__actions reveal" data-delay="3">
         <a
-          href="https://www.linkedin.com/in/mauro-trejo-98968b1ab/"
+          href="https://wa.me/543814767206"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn--primary"
+        >
+          {copy.whatsapp}
+        </a>
+        <a href="mailto:maurocrsiete@gmail.com" className="btn btn--secondary">
+          {copy.email}
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mauro-trejo-98968b1ab/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--secondary"
         >
           {copy.linkedin}
         </a>

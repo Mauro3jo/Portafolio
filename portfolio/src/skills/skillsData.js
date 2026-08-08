@@ -23,11 +23,13 @@ const skills = {
   3: [
     { title: "Git", level: 9 },
     { title: "AWS", level: 6 },
+    { title: "Firebase", level: 6 },
     { title: "Docker", level: 5 },
     { title: "IIS / Windows Server", level: 7 },
     { title: "Jira", level: 7 },
     { title: "REST APIs", level: 9 },
     { title: "Microservicios", level: 7 },
+    { title: "CI/CD", level: 6 },
     { title: "SOLID", level: 8 },
     { title: "Repository Pattern", level: 8 },
   ],

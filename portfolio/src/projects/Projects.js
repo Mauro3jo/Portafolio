@@ -7,15 +7,9 @@ const sectionTitles = {
   en: { label: "// WORK", title: "Projects" },
 };
 
-const visitLabel = {
-  es: "Ver sitio",
-  en: "Visit site",
-};
-
 const Projects = ({ language = "es" }) => {
   const { label, title } = sectionTitles[language] || sectionTitles.es;
   const projects = getProjectsData(language);
-  const visit = visitLabel[language] || visitLabel.es;
 
   return (
     <div className="container">
@@ -23,7 +17,7 @@ const Projects = ({ language = "es" }) => {
       <h2 className="section-title reveal" data-delay="1">{title}</h2>
 
       <div className="projects-grid">
-        {Object.values(projects).map((project, index) => (
+        {projects.map((project, index) => (
           <div key={project.title} className="project-card reveal" data-delay={index + 1}>
             {project.image && (
               <div className="project-card__img-wrap">
@@ -35,6 +29,7 @@ const Projects = ({ language = "es" }) => {
               </div>
             )}
             <div className="project-card__body">
+              {project.eyebrow && <p className="project-card__eyebrow">{project.eyebrow}</p>}
               <h3 className="project-card__title">{project.title}</h3>
               <div className="project-card__desc">{project.description}</div>
               {project.stack && (
@@ -44,15 +39,20 @@ const Projects = ({ language = "es" }) => {
                   ))}
                 </div>
               )}
-              {project.sitioWeb && (
-                <a
-                  href={project.sitioWeb}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-card__link"
-                >
-                  {visit} →
-                </a>
+              {project.links?.length > 0 && (
+                <div className="project-card__links">
+                  {project.links.map((link) => (
+                    <a
+                      key={link.url}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-card__link"
+                    >
+                      {link.label} →
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
           </div>
