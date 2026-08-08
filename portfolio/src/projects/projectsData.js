@@ -9,6 +9,7 @@ import trinidadLogo from "../assets/logos/trinidad-salud.png";
 
 const urls = {
   realPlaza: "https://play.google.com/store/apps/details?id=com.realplazago.app",
+  realPlazaWeb: "https://www.realplaza.com/",
   zocoWeb: "https://zocopagos.com/",
   zocoApp: "https://play.google.com/store/apps/details?id=com.mauro3jo.zocoweb",
   zocoTickets: "https://play.google.com/store/apps/details?id=com.men7ar31.zocotickets",
@@ -41,7 +42,10 @@ const localizedProjects = {
       stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "Azure", "CI/CD"],
       description:
         "Desarrollo y evolución de una aplicación mobile con más de un millón de descargas. Desde PinApp participo en funcionalidades mobile, servicios backend, integraciones y decisiones técnicas para beneficios, tiendas, eventos y estacionamiento.",
-      links: [{ label: "Google Play", url: urls.realPlaza }],
+      links: [
+        { label: "Sitio oficial", url: urls.realPlazaWeb },
+        { label: "Google Play", url: urls.realPlaza },
+      ],
     },
     {
       title: "Zoco Pagos — Plataforma web",
@@ -191,7 +195,10 @@ const localizedProjects = {
       stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "Azure", "CI/CD"],
       description:
         "Development and evolution of a mobile app with over one million downloads. At PinApp, I contribute to mobile features, backend services, integrations and technical decisions supporting benefits, stores, events and parking.",
-      links: [{ label: "Google Play", url: urls.realPlaza }],
+      links: [
+        { label: "Official website", url: urls.realPlazaWeb },
+        { label: "Google Play", url: urls.realPlaza },
+      ],
     },
     {
       title: "Zoco Payments — Web platform",
