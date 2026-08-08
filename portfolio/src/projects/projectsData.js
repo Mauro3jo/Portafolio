@@ -12,6 +12,7 @@ const urls = {
   zocoWeb: "https://zocopagos.com/",
   zocoApp: "https://play.google.com/store/apps/details?id=com.mauro3jo.zocoweb",
   zocoTickets: "https://play.google.com/store/apps/details?id=com.men7ar31.zocotickets",
+  zocoTicketsWeb: "https://www.zocotickets.com/event",
   zocoScanner: "https://play.google.com/store/apps/details?id=com.zoco.rnscanner",
   miDirectv: "https://play.google.com/store/apps/details?id=ar.com.directvla.ecare",
   optimus: "https://play.google.com/store/apps/details?id=com.snd.optimusar",
@@ -79,8 +80,11 @@ const localizedProjects = {
       imageType: "logo",
       stack: ["React Native", "Expo", "REST APIs", "Pagos", "QR"],
       description:
-        "Aplicación para descubrir eventos, comprar y administrar entradas. Incluye herramientas para organizadores, gestión de eventos y roles, control de asistencia, cupones, sponsors, ventas y finanzas.",
-      links: [{ label: "Google Play", url: urls.zocoTickets }],
+        "Producto web y mobile para descubrir eventos, comprar y administrar entradas. Incluye herramientas para organizadores, gestión de eventos y roles, control de asistencia, cupones, sponsors, ventas y finanzas, con una experiencia compartida entre el sitio y la aplicación.",
+      links: [
+        { label: "Ver sitio web", url: urls.zocoTicketsWeb },
+        { label: "Google Play", url: urls.zocoTickets },
+      ],
     },
     {
       title: "Zoco Scanner",
@@ -226,8 +230,11 @@ const localizedProjects = {
       imageType: "logo",
       stack: ["React Native", "Expo", "REST APIs", "Payments", "QR"],
       description:
-        "App for discovering events and purchasing and managing tickets. It includes organizer tools for events and roles, attendance control, coupons, sponsors, sales and finances.",
-      links: [{ label: "Google Play", url: urls.zocoTickets }],
+        "Web and mobile product for discovering events and purchasing and managing tickets. It includes organizer tools for events and roles, attendance control, coupons, sponsors, sales and finances, with a shared experience across the website and app.",
+      links: [
+        { label: "Visit website", url: urls.zocoTicketsWeb },
+        { label: "Google Play", url: urls.zocoTickets },
+      ],
     },
     {
       title: "Zoco Scanner",
