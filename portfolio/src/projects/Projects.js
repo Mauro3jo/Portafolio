@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import getProjectsData from "./projectsData";
 import "../styles/projectsMenu.css";
 
 const sectionTitles = {
   es: { label: "// TRABAJO", title: "Proyectos" },
   en: { label: "// WORK", title: "Projects" },
+};
+
+const getInitials = (title) =>
+  title
+    .replace(/—.*/, "")
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
+
+const ProjectImage = ({ project }) => {
+  const [failed, setFailed] = useState(false);
+
+  return (
+    <div className={`project-card__img-wrap ${project.imageType === "logo" ? "project-card__img-wrap--logo" : ""}`}>
+      {!failed && project.image ? (
+        <img
+          src={project.image}
+          alt={`Logo de ${project.title}`}
+          className={`project-card__img ${project.imageType === "logo" ? "project-card__img--logo" : ""}`}
+          loading="lazy"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <div className="project-card__logo-fallback" aria-label={project.title}>
+          {getInitials(project.title)}
+        </div>
+      )}
+    </div>
+  );
 };
 
 const Projects = ({ language = "es" }) => {
@@ -18,17 +50,12 @@ const Projects = ({ language = "es" }) => {
 
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={project.title} className="project-card reveal" data-delay={index + 1}>
-            {project.image && (
-              <div className={`project-card__img-wrap ${project.imageType === "logo" ? "project-card__img-wrap--logo" : ""}`}>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className={`project-card__img ${project.imageType === "logo" ? "project-card__img--logo" : ""}`}
-                  loading="lazy"
-                />
-              </div>
-            )}
+          <article
+            key={project.title}
+            className="project-card"
+            style={{ "--project-order": Math.min(index, 8) }}
+          >
+            <ProjectImage project={project} />
             <div className="project-card__body">
               {project.eyebrow && <p className="project-card__eyebrow">{project.eyebrow}</p>}
               <h3 className="project-card__title">{project.title}</h3>
@@ -56,7 +83,7 @@ const Projects = ({ language = "es" }) => {
                 </div>
               )}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </div>
