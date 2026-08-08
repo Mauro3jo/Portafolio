@@ -1,3 +1,12 @@
+import realPlazaLogo from "../assets/logos/real-plaza.png";
+import zocoLogo from "../assets/logos/zoco.jpg";
+import zocoTicketsLogo from "../assets/logos/zoco-tickets.jpg";
+import zocoScannerLogo from "../assets/logos/zoco-scanner.jpg";
+import miDirectvLogo from "../assets/logos/midirectv.png";
+import optimusLogo from "../assets/logos/optimus.png";
+import dgoLogo from "../assets/logos/dgo.png";
+import trinidadLogo from "../assets/logos/trinidad-salud.png";
+
 const urls = {
   realPlaza: "https://play.google.com/store/apps/details?id=com.realplazago.app",
   zocoWeb: "https://zocopagos.com/",
@@ -11,14 +20,14 @@ const urls = {
 };
 
 const logos = {
-  realPlaza: "https://play-lh.googleusercontent.com/FiPP5neF3_vXvUHWqfsjD4BkXP4FVFfoEK_qh81V1W00Rpa7DIpNaUnZIfCmprk1cY5nnlksY3bMGvEYKUEb2g",
-  zoco: "https://play-lh.googleusercontent.com/KgPY32i4e4grBmEktSF2s2bCz7yMLeY4qo-wR4d4OQARHvMSVPn4xubCxdUOe1eD7kkYwtVQkJlqwUV7qqcuJw",
-  tickets: "https://play-lh.googleusercontent.com/pWaMv_lPPk5ZAKBvS_zHHzf27kvjvlSnWYCKSHvGzFKwZeN-4zHPYjgYzGj7eTdyZMrzKALIxyDTE8IiNwJ6nOc",
-  scanner: "https://play-lh.googleusercontent.com/LtFVH1oNIYrQ2cjYBWAn0hZRh9q15a1B97gV9sbqDy8WKZEE5CbnraKBtQkTFJO4vr7HCw0UedQGSreg8Rn6kg",
-  miDirectv: "https://play-lh.googleusercontent.com/aBCiBm81ykOiwQRXYravN7ZozSWGGzVLphQxTHR0DBEco9fWOb3Q5CaiMmWJT2TuTHVU3xC_YHRTTf2JkoAaYVE",
-  optimus: "https://play-lh.googleusercontent.com/TcyPLiEVbevnLUccM93bT3MKDrf3FdXGpxNyHLVZRdvGGnBa3D6kx_FuZv7rK429pz59kOjx5FGfcfmdKG7xSw",
-  dgo: "https://play-lh.googleusercontent.com/i_gpN4aTSDbpBYDoBRdYlHFqMP30kkXqI08Kmm5Im1rVl7rF666zspIThnCGiLhuinvLPGB-ZA5Q4Ks8qJUFZw",
-  trinidad: "https://trinidadsalud.com.ar/landing-assets/img/logo.png",
+  realPlaza: realPlazaLogo,
+  zoco: zocoLogo,
+  tickets: zocoTicketsLogo,
+  scanner: zocoScannerLogo,
+  miDirectv: miDirectvLogo,
+  optimus: optimusLogo,
+  dgo: dgoLogo,
+  trinidad: trinidadLogo,
 };
 
 const localizedProjects = {
