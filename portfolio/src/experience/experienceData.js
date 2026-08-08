@@ -9,8 +9,8 @@ const experienceData = {
       current: true,
       isEducation: false,
       description:
-        "Desarrollo y evolución de la aplicación mobile de Real Plaza y sus servicios backend. Trabajo con React Native, .NET y C#, integrando APIs REST, SQL Server y Firebase. Participo en decisiones técnicas, arquitectura, procesos de CI/CD y mejora continua de un producto utilizado a gran escala.",
-      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "REST APIs", "CI/CD"],
+        "Desarrollo y evolución de la aplicación mobile de Real Plaza y sus servicios backend. Trabajo con React Native, .NET y C#, integrando APIs REST, SQL Server, Firebase y servicios en Microsoft Azure. Participo en decisiones técnicas, arquitectura, procesos de CI/CD y mejora continua de un producto utilizado a gran escala.",
+      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "Azure", "REST APIs", "CI/CD"],
     },
     {
       id: 2,
@@ -83,8 +83,8 @@ const experienceData = {
       current: true,
       isEducation: false,
       description:
-        "Development and evolution of the Real Plaza mobile app and its backend services. I work with React Native, .NET and C#, integrating REST APIs, SQL Server and Firebase. I contribute to technical decisions, architecture, CI/CD processes and the continuous improvement of a large-scale product.",
-      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "REST APIs", "CI/CD"],
+        "Development and evolution of the Real Plaza mobile app and its backend services. I work with React Native, .NET and C#, integrating REST APIs, SQL Server, Firebase and Microsoft Azure services. I contribute to technical decisions, architecture, CI/CD processes and the continuous improvement of a large-scale product.",
+      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "Azure", "REST APIs", "CI/CD"],
     },
     {
       id: 2,

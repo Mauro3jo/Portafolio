@@ -19,7 +19,7 @@ const localizedProjects = {
     {
       title: "Real Plaza",
       eyebrow: "PROYECTO ACTUAL · PARTICIPACIÓN EN EQUIPO",
-      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "CI/CD"],
+      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "Azure", "CI/CD"],
       description:
         "Desarrollo y evolución de una aplicación mobile con más de un millón de descargas. Desde PinApp participo en funcionalidades mobile, servicios backend, integraciones y decisiones técnicas para beneficios, tiendas, eventos y estacionamiento.",
       links: [{ label: "Google Play", url: urls.realPlaza }],
@@ -131,7 +131,7 @@ const localizedProjects = {
     {
       title: "Real Plaza",
       eyebrow: "CURRENT PROJECT · TEAM CONTRIBUTION",
-      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "CI/CD"],
+      stack: ["React Native", ".NET", "C#", "SQL Server", "Firebase", "Azure", "CI/CD"],
       description:
         "Development and evolution of a mobile app with over one million downloads. At PinApp, I contribute to mobile features, backend services, integrations and technical decisions supporting benefits, stores, events and parking.",
       links: [{ label: "Google Play", url: urls.realPlaza }],
