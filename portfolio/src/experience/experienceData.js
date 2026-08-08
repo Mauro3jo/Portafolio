@@ -33,7 +33,7 @@ const experienceData = {
       current: false,
       isEducation: false,
       description:
-        "Desarrollé soluciones web, mobile y desktop para pagos, operaciones y eventos. Construí y publiqué Zoco, Zoco Tickets y Zoco Scanner. En la plataforma ASP.NET Core + React implementé CRM y seguimiento comercial, altas y bajas de comercios, liquidaciones e impuestos, órdenes de pago y anticipos, compliance transaccional, monitoreo operativo, legajos, reportes PDF/Excel, cupones, fidelización y paneles por rol. Además creé herramientas WinForms y .NET 8 para carga masiva y automatización financiera de Excel con reglas por tarjeta, QR, macros y controles de calidad.",
+        "Desarrollé soluciones web, mobile y desktop para pagos, operaciones y eventos. Construí y publiqué Zoco, Zoco Tickets y Zoco Scanner. En la plataforma ASP.NET Core + React implementé CRM y seguimiento comercial, integración de leads con Meta, un asistente contextual con IA, altas y bajas de comercios, liquidaciones e impuestos, órdenes de pago, compliance, monitoreo, reportes y paneles por rol. Además creé herramientas WinForms y .NET 8 para carga masiva y automatización financiera de Excel con reglas por tarjeta, QR, macros y controles de calidad.",
       stack: ["ASP.NET Core", "React", "React Native", ".NET 8", "WinForms", "SQL Server", "Excel Interop", "AWS"],
     },
     {
@@ -59,18 +59,6 @@ const experienceData = {
       description:
         "Diseño y desarrollo de soluciones web y mobile de punta a punta para empresas y profesionales: relevamiento, arquitectura, APIs, interfaces, bases de datos, despliegue y mantenimiento. Digitalización de procesos manuales y construcción de sistemas de gestión, landing pages y plataformas con React, Laravel, .NET y React Native.",
       stack: ["React", "React Native", ".NET", "Laravel", "SQL Server", "MySQL", "AWS"],
-    },
-    {
-      id: 6,
-      role: "Técnico Universitario en Programación",
-      company: "Universidad Tecnológica Nacional (UTN)",
-      client: null,
-      period: "2018 — 2021",
-      current: false,
-      isEducation: true,
-      description:
-        "Carrera universitaria enfocada en desarrollo de software web y de escritorio, bases de datos y construcción de aplicaciones completas.",
-      stack: ["ASP.NET Core", "React", "SQL Server", "PHP", "Windows Forms"],
     },
   ],
   en: [
@@ -107,7 +95,7 @@ const experienceData = {
       current: false,
       isEducation: false,
       description:
-        "Built web, mobile and desktop solutions for payments, operations and events, including the development and release of Zoco, Zoco Tickets and Zoco Scanner. On the ASP.NET Core + React platform I implemented CRM and sales tracking, merchant onboarding and offboarding, settlements and taxes, payment orders and advances, transaction compliance, operational monitoring, employee records, PDF/Excel reporting, coupons, loyalty features and role-based panels. I also created WinForms and .NET 8 tools for bulk uploads and financial Excel automation with card-specific rules, QR workflows, macros and quality controls.",
+        "Built web, mobile and desktop solutions for payments, operations and events, including the development and release of Zoco, Zoco Tickets and Zoco Scanner. On the ASP.NET Core + React platform I implemented CRM and sales tracking, Meta lead integration, a contextual AI assistant, merchant onboarding and offboarding, settlements and taxes, payment orders, compliance, monitoring, reporting and role-based panels. I also created WinForms and .NET 8 tools for bulk uploads and financial Excel automation with card-specific rules, QR workflows, macros and quality controls.",
       stack: ["ASP.NET Core", "React", "React Native", ".NET 8", "WinForms", "SQL Server", "Excel Interop", "AWS"],
     },
     {
@@ -133,18 +121,6 @@ const experienceData = {
       description:
         "End-to-end design and development of web and mobile solutions for companies and professionals: discovery, architecture, APIs, interfaces, databases, deployment and maintenance. I digitize manual processes and build management systems, landing pages and platforms with React, Laravel, .NET and React Native.",
       stack: ["React", "React Native", ".NET", "Laravel", "SQL Server", "MySQL", "AWS"],
-    },
-    {
-      id: 6,
-      role: "University Programming Technician",
-      company: "Universidad Tecnológica Nacional (UTN)",
-      client: null,
-      period: "2018 — 2021",
-      current: false,
-      isEducation: true,
-      description:
-        "University degree focused on web and desktop software development, databases and end-to-end application development.",
-      stack: ["ASP.NET Core", "React", "SQL Server", "PHP", "Windows Forms"],
     },
   ],
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "./nav/Nav.js";
 import Hero from "./hero/Hero.js";
 import Experience from "./experience/Experience.js";
+import Education from "./education/Education.js";
 import Skills from "./skills/Skills.js";
 import Projects from "./projects/Projects.js";
 import Contact from "./contact/Contact.js";
@@ -42,6 +43,12 @@ const App = () => {
 
         <section id="experience">
           <Experience language={language} />
+        </section>
+
+        <hr className="section-divider" />
+
+        <section id="education">
+          <Education language={language} />
         </section>
 
         <hr className="section-divider" />

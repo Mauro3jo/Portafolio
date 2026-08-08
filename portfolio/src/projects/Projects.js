@@ -20,11 +20,12 @@ const Projects = ({ language = "es" }) => {
         {projects.map((project, index) => (
           <div key={project.title} className="project-card reveal" data-delay={index + 1}>
             {project.image && (
-              <div className="project-card__img-wrap">
+              <div className={`project-card__img-wrap ${project.imageType === "logo" ? "project-card__img-wrap--logo" : ""}`}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="project-card__img"
+                  className={`project-card__img ${project.imageType === "logo" ? "project-card__img--logo" : ""}`}
+                  loading="lazy"
                 />
               </div>
             )}
