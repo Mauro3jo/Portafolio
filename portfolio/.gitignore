@@ -8,6 +8,8 @@ node_modules_*/
 
 # testing and caches
 coverage/
+__pycache__/
+*.py[cod]
 .cache/
 .eslintcache
 .parcel-cache/
@@ -16,6 +18,7 @@ coverage/
 # production
 build/
 dist/
+.cv-build/
 
 # misc
 .DS_Store
