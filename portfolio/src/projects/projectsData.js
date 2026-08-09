@@ -36,6 +36,7 @@ const localizedProjects = {
   es: [
     {
       title: "Real Plaza",
+      featured: true,
       eyebrow: "PROYECTO ACTUAL · PARTICIPACIÓN EN EQUIPO",
       image: logos.realPlaza,
       imageType: "logo",
@@ -45,6 +46,20 @@ const localizedProjects = {
       links: [
         { label: "Sitio oficial", url: urls.realPlazaWeb },
         { label: "Google Play", url: urls.realPlaza },
+      ],
+    },
+    {
+      title: "Zoco — Ecosistema de pagos",
+      featured: true,
+      eyebrow: "PLATAFORMA WEB · MOBILE · EVENTOS · AUTOMATIZACIÓN",
+      image: logos.zoco,
+      imageType: "logo",
+      stack: ["ASP.NET Core", "React", "React Native", ".NET 8", "SQL Server", "AWS"],
+      description:
+        "Ecosistema integral que conecta la plataforma de gestión y pagos con aplicaciones para aliados, venta y validación de entradas, CRM con leads de Meta, un asistente contextual con IA y herramientas de automatización financiera. Las tarjetas individuales detallan cada producto y mi contribución.",
+      links: [
+        { label: "Ver Zoco Pagos", url: urls.zocoWeb },
+        { label: "Ver Zoco Tickets", url: urls.zocoTicketsWeb },
       ],
     },
     {
@@ -130,6 +145,7 @@ const localizedProjects = {
     },
     {
       title: "Optimus Plus",
+      featured: true,
       eyebrow: "PARTICIPACIÓN EN EQUIPO · MULTIPAÍS",
       image: logos.optimus,
       imageType: "logo",
@@ -150,6 +166,7 @@ const localizedProjects = {
     },
     {
       title: "DIRECTV — Field Service Management",
+      featured: true,
       eyebrow: "BACKEND Y HERRAMIENTAS INTERNAS · 6 PAÍSES",
       image: logos.miDirectv,
       imageType: "logo",
@@ -159,6 +176,7 @@ const localizedProjects = {
     },
     {
       title: "Trinidad Salud — Web y administración",
+      featured: true,
       eyebrow: "DESARROLLO END-TO-END",
       image: logos.trinidad,
       imageType: "logo",
@@ -189,6 +207,7 @@ const localizedProjects = {
   en: [
     {
       title: "Real Plaza",
+      featured: true,
       eyebrow: "CURRENT PROJECT · TEAM CONTRIBUTION",
       image: logos.realPlaza,
       imageType: "logo",
@@ -198,6 +217,20 @@ const localizedProjects = {
       links: [
         { label: "Official website", url: urls.realPlazaWeb },
         { label: "Google Play", url: urls.realPlaza },
+      ],
+    },
+    {
+      title: "Zoco — Payments ecosystem",
+      featured: true,
+      eyebrow: "WEB PLATFORM · MOBILE · EVENTS · AUTOMATION",
+      image: logos.zoco,
+      imageType: "logo",
+      stack: ["ASP.NET Core", "React", "React Native", ".NET 8", "SQL Server", "AWS"],
+      description:
+        "Integrated ecosystem connecting the payments and management platform with merchant apps, ticket sales and validation, CRM with Meta leads, a contextual AI assistant and financial automation tools. The individual cards describe each product and my contribution.",
+      links: [
+        { label: "Visit Zoco Payments", url: urls.zocoWeb },
+        { label: "Visit Zoco Tickets", url: urls.zocoTicketsWeb },
       ],
     },
     {
@@ -283,6 +316,7 @@ const localizedProjects = {
     },
     {
       title: "Optimus Plus",
+      featured: true,
       eyebrow: "TEAM CONTRIBUTION · MULTI-COUNTRY",
       image: logos.optimus,
       imageType: "logo",
@@ -303,6 +337,7 @@ const localizedProjects = {
     },
     {
       title: "DIRECTV — Field Service Management",
+      featured: true,
       eyebrow: "BACKEND AND INTERNAL TOOLS · 6 COUNTRIES",
       image: logos.miDirectv,
       imageType: "logo",
@@ -312,6 +347,7 @@ const localizedProjects = {
     },
     {
       title: "Trinidad Salud — Web and administration",
+      featured: true,
       eyebrow: "END-TO-END DEVELOPMENT",
       image: logos.trinidad,
       imageType: "logo",

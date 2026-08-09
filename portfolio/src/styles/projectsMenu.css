@@ -145,6 +145,16 @@
   text-underline-offset: 3px;
 }
 
+.projects-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.25rem;
+}
+
+.projects-toggle {
+  min-width: 220px;
+}
+
 .project-card__link:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;

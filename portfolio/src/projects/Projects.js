@@ -3,8 +3,18 @@ import getProjectsData from "./projectsData";
 import "../styles/projectsMenu.css";
 
 const sectionTitles = {
-  es: { label: "// TRABAJO", title: "Proyectos" },
-  en: { label: "// WORK", title: "Projects" },
+  es: {
+    label: "// TRABAJO",
+    title: "Proyectos destacados",
+    showAll: "Ver todos los proyectos",
+    showFeatured: "Ver solo destacados",
+  },
+  en: {
+    label: "// WORK",
+    title: "Featured projects",
+    showAll: "View all projects",
+    showFeatured: "View featured only",
+  },
 };
 
 const getInitials = (title) =>
@@ -40,8 +50,10 @@ const ProjectImage = ({ project }) => {
 };
 
 const Projects = ({ language = "es" }) => {
-  const { label, title } = sectionTitles[language] || sectionTitles.es;
+  const [showAll, setShowAll] = useState(false);
+  const { label, title, showAll: showAllLabel, showFeatured } = sectionTitles[language] || sectionTitles.es;
   const projects = getProjectsData(language);
+  const visibleProjects = showAll ? projects : projects.filter((project) => project.featured);
 
   return (
     <div className="container">
@@ -49,7 +61,7 @@ const Projects = ({ language = "es" }) => {
       <h2 className="section-title reveal" data-delay="1">{title}</h2>
 
       <div className="projects-grid">
-        {projects.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <article
             key={project.title}
             className="project-card"
@@ -85,6 +97,18 @@ const Projects = ({ language = "es" }) => {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className="projects-actions reveal">
+        <button
+          type="button"
+          className="btn btn--secondary projects-toggle"
+          onClick={() => setShowAll((current) => !current)}
+          aria-expanded={showAll}
+        >
+          {showAll ? showFeatured : showAllLabel}
+          <span aria-hidden="true">{showAll ? " ↑" : " ↓"}</span>
+        </button>
       </div>
     </div>
   );
