@@ -2,22 +2,28 @@ import React, { useState, useEffect, useRef } from "react";
 import skills from "./skillsData";
 import "../styles/skillsMenu.css";
 
-const MAX_LEVEL = 10;
-
 const sectionTitles = {
-  es: { label: "// TECNOLOGÍAS", title: "Skills" },
-  en: { label: "// TECHNOLOGIES", title: "Skills" },
+  es: {
+    label: "// TECNOLOGÍAS",
+    title: "Stack técnico",
+    description: "Tecnologías respaldadas por experiencia en productos reales, organizadas según su presencia en mi trabajo diario.",
+  },
+  en: {
+    label: "// TECHNOLOGIES",
+    title: "Technical stack",
+    description: "Technologies backed by real product experience, grouped by how frequently I use them in my work.",
+  },
 };
 
 const categoryLabels = {
-  es: { 1: "Back-end", 2: "Front-end", 3: "Herramientas" },
-  en: { 1: "Back-end", 2: "Front-end", 3: "Tools" },
+  es: { principal: "Principal", solid: "Experiencia sólida", additional: "Experiencia adicional" },
+  en: { principal: "Core", solid: "Strong experience", additional: "Additional experience" },
 };
 
 const Skills = ({ language = "es" }) => {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState("principal");
   const gridRef = useRef(null);
-  const { label, title } = sectionTitles[language] || sectionTitles.es;
+  const { label, title, description } = sectionTitles[language] || sectionTitles.es;
   const categories = categoryLabels[language] || categoryLabels.es;
 
   // Re-animate cards when tab changes
@@ -45,18 +51,18 @@ const Skills = ({ language = "es" }) => {
     <div className="container">
       <p className="section-label reveal">{label}</p>
       <h2 className="section-title reveal" data-delay="1">{title}</h2>
+      <p className="skills-description reveal" data-delay="2">{description}</p>
 
-      <div className="skills-tabs reveal" data-delay="2" role="tablist">
+      <div className="skills-tabs reveal" data-delay="3" role="tablist">
         {Object.keys(categories).map((key) => {
-          const id = Number(key);
           return (
             <button
               key={key}
               type="button"
               role="tab"
-              aria-selected={active === id}
-              className={`skills-tab ${active === id ? "skills-tab--active" : ""}`}
-              onClick={() => setActive(id)}
+              aria-selected={active === key}
+              className={`skills-tab ${active === key ? "skills-tab--active" : ""}`}
+              onClick={() => setActive(key)}
             >
               {categories[key]}
             </button>
@@ -66,17 +72,9 @@ const Skills = ({ language = "es" }) => {
 
       <div className="skills-grid" role="tabpanel" ref={gridRef}>
         {(skills[active] || []).map((skill, index) => (
-          <div key={skill.title} className="skill-card reveal" data-delay={Math.min(index + 1, 5)}>
-            <div className="skill-card__info">
-              <span className="skill-card__name">{skill.title}</span>
-              <span className="skill-card__level">{skill.level}/{MAX_LEVEL}</span>
-            </div>
-            <div className="skill-card__bar">
-              <div
-                className="skill-card__fill"
-                style={{ width: `${(skill.level / MAX_LEVEL) * 100}%` }}
-              ></div>
-            </div>
+          <div key={skill} className="skill-card reveal" data-delay={Math.min(index + 1, 5)}>
+            <span className="skill-card__marker" aria-hidden="true"></span>
+            <span className="skill-card__name">{skill}</span>
           </div>
         ))}
       </div>
