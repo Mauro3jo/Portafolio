@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Mauro Trejo — Senior Full Stack Developer</title>
+  <desc id="desc">Presentación profesional de Mauro Trejo, especializado en React Native, React y .NET</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#E8F4F8" opacity="0.07"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.12" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#00C8FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#00C8FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#080E1A"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="72" y="78" width="58" height="5" rx="2.5" fill="#00C8FF"/>
+  <text x="72" y="190" fill="#E8F4F8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="72" font-weight="750">Mauro Trejo</text>
+  <text x="72" y="258" fill="#00C8FF" font-family="JetBrains Mono, Consolas, monospace" font-size="25" font-weight="600" letter-spacing="3">SENIOR FULL STACK DEVELOPER</text>
+  <text x="72" y="330" fill="#7B91A8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">Mobile · Web · Backend</text>
+  <g transform="translate(72 395)" font-family="JetBrains Mono, Consolas, monospace" font-size="20" fill="#E8F4F8">
+    <rect width="152" height="48" rx="8" fill="#0F1929" stroke="#1A2840"/>
+    <text x="28" y="31">React Native</text>
+    <rect x="168" width="92" height="48" rx="8" fill="#0F1929" stroke="#1A2840"/>
+    <text x="192" y="31">React</text>
+    <rect x="276" width="82" height="48" rx="8" fill="#0F1929" stroke="#1A2840"/>
+    <text x="302" y="31">.NET</text>
+    <rect x="374" width="92" height="48" rx="8" fill="#0F1929" stroke="#1A2840"/>
+    <text x="394" y="31">Azure</text>
+  </g>
+  <text x="72" y="544" fill="#7B91A8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">maurotrejoportafolio.com</text>
+  <g transform="translate(880 150)" fill="none">
+    <rect width="220" height="330" rx="30" fill="#0F1929" stroke="#1A2840" stroke-width="4"/>
+    <rect x="18" y="42" width="184" height="246" rx="12" fill="#080E1A" stroke="#1A2840"/>
+    <circle cx="110" cy="22" r="5" fill="#00C8FF"/>
+    <circle cx="62" cy="94" r="22" fill="#00C8FF" opacity="0.18"/>
+    <path d="M54 94l7 7 13-17" stroke="#00C8FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M96 84h72M96 102h52M46 146h122M46 178h96M46 210h122M46 242h72" stroke="#00C8FF" stroke-opacity="0.48" stroke-width="5" stroke-linecap="round"/>
+    <rect x="78" y="304" width="64" height="5" rx="2.5" fill="#7B91A8"/>
+  </g>
+</svg>
